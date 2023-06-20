@@ -6,61 +6,68 @@ body {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
-  width: 375px;
-  overflow-x: hidden;
 }
-body .main-container {
+
+.main-container {
   max-width: 375px;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 50px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body .main-container header {
+.main-container header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body .main-container header .logo-image {
+.main-container header .logo-image {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
   padding: 0;
+  margin-right: 0px;
 }
-body .main-container header .logo-image.custom-width {
-  display: flex;
-  justify-content: center;
-  margin-left: 30px;
-  color: #000000;
-  background-color: #ffffff;
+
+.logo-image.custom-width{
+  box-shadow: none;
 }
-body .main-container header .logo-image.custom-width img {
-  width: 65%;
+.main-container header img {
+  width: 162px;
+  margin-left: 28px;
 }
-body .main-container .icone-localisation {
-  padding: 20px;
+
+.icone-localisation {
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 5px;
   background-color: lightgray;
-  width: 88%;
   margin-top: 20px;
+  border-color: lightgray;
+  height: 50px;
+  width: 375px;
 }
-body .main-container h2 {
+
+.fa-solid.fa-location-dot {
+  margin-top: 15px;
+}
+
+h2 {
   font-size: 16px;
   color: #000000;
   padding: 0;
-  margin-top: 0;
+  margin-top: 15px;
   margin-bottom: 0;
+  margin-left: 20px;
 }
-body main {
+
+main {
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -68,28 +75,28 @@ body main {
   justify-content: center;
   width: 100%;
 }
-body main .decouverte {
+main .decouverte {
   text-align: center;
   padding: 35px 0;
   width: 375px;
   background-color: #f7f7f7;
 }
-body main h1 {
+main h1 {
   color: #000000;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
   line-height: 28px;
   width: 100%;
-  margin-left: 45px;
+  margin-left: 5px;
   height: 68px;
 }
-body main h3 {
+main h3 {
   color: #000000;
   font-size: 16px;
   margin-bottom: 20px;
 }
-body main button.explorer {
+main button.explorer {
   display: inline-block;
   padding: 10px 20px;
   border: none;
@@ -99,8 +106,12 @@ body main button.explorer {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  width: 218px;
+  height: 50px;
+  margin-top: 15px;
+  font-size: 16px;
 }
-body main .button {
+main .button {
   display: flex;
   justify-content: center;
   display: inline-block;
@@ -112,52 +123,60 @@ body main .button {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  background-color: #f6f6f6;
+  background-color: #f7f7f7;
   margin-bottom: 20px;
   margin-left: 20px;
   width: 75%;
   height: 72.38px;
   margin-top: 20px;
 }
-body main a {
+main a {
   color: #000000;
   text-decoration: none;
 }
-body main .icone-fonctionnement {
+main .icone-fonctionnement {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 13px;
   position: relative;
 }
-body main .fas.fa-mobile-screen-button {
+main .fas.fa-mobile-screen-button {
+  width: 13.02px;
+  height: 19.9px;
+  position: relative;
+  left: -33px;
+  color: #000;
+}
+
+main .fas.fa-mobile-screen-button:hover {
+  color: #9356DC;
+}
+
+
+main .fas.fa-list-ul {
   width: 13.02px;
   height: 19.9px;
   position: relative;
   left: -33px;
   color: #9356DC;
 }
-body main .fas.fa-list-ul {
+main .fas.fa-store {
   width: 13.02px;
   height: 19.9px;
   position: relative;
   left: -33px;
   color: #9356DC;
 }
-body main .fas.fa-store {
-  width: 13.02px;
-  height: 19.9px;
-  position: relative;
-  left: -33px;
-  color: #9356DC;
-}
-body .article.card {
+
+.article.card {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   width: 100%;
 }
-body img {
+
+img {
   width: 100%;
   margin-top: 20px;
 }
