@@ -1,0 +1,21 @@
+@mixin button-styles($background-color: $primary-color, $text-color: #ffffff) {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $button-border-radius;
+    background-color: $background-color;
+    color: $text-color;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+@mixin card-style {
+    width: 767.98px;
+}
+
+@mixin transition($property, $duration) {
+    transition: $property $duration ease-in-out;
+}

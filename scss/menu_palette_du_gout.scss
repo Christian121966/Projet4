@@ -1,0 +1,37 @@
+/*media query pour un écran d'une largeur de 767.98px*/
+@media screen and (max-width: 767.98px) {
+
+    //menu_palette_du_gout.scss
+
+    @import '_variables';
+
+    .main-container {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        background-color: white;
+
+        .logo-ohmyfood {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+    }
+
+    main {
+        .menu {
+            background-color: #F7F7F7;
+            width: 100%;
+        }
+
+        .menu div {
+            width: 100%;
+        }
+
+        .logo-menu {
+            color: #000000;
+        }
+    }
+}
