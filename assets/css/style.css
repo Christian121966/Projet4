@@ -52,6 +52,7 @@ body {
   border-color: lightgray;
   height: 50px;
   width: 375px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .fa-solid.fa-location-dot {
@@ -63,7 +64,7 @@ h2 {
   color: #000000;
   padding: 0;
   margin-top: 15px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   margin-left: 20px;
 }
 
@@ -93,7 +94,7 @@ main h1 {
 }
 main h3 {
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 main button.explorer {
@@ -146,7 +147,7 @@ main .fas.fa-mobile-screen-button {
   height: 19.9px;
   position: relative;
   left: -33px;
-  color: #000;
+  color: #7E7E7E;
 }
 
 main .fas.fa-mobile-screen-button:hover {
@@ -159,15 +160,38 @@ main .fas.fa-list-ul {
   height: 19.9px;
   position: relative;
   left: -33px;
+  color: #7E7E7E;
+}
+
+main .fas.fa-list-ul:hover {
   color: #9356DC;
 }
+
+
 main .fas.fa-store {
   width: 13.02px;
   height: 19.9px;
   position: relative;
   left: -33px;
+  color: #7E7E7E;
+}
+
+main .fas.fa-store:hover:hover {
   color: #9356DC;
 }
+
+
+.restaurants {
+  background-color: #eaeaea;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
 
 .article.card {
   display: flex;
@@ -178,7 +202,116 @@ main .fas.fa-store {
 
 img {
   width: 100%;
-  margin-top: 20px;
+  height: 231px;
+  margin-top: 0px;
+  border-radius: 20px 20px 0px 0px;
+  margin-left: 0px;
+}
+
+.card-content {
+  margin-left: 20px;
+}
+
+h3.card-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 375px) {
+
+
+.icone-coeur {
+  position: absolute;
+  right: 30px;
+  bottom: -136%;
+}
+
+
+@media (hover: none){
+
+
+.icone-coeur:hover {
+  color: #9356DC;
+}
+
+
+}
+
+.icone-coeur1 {
+  position: absolute;
+  right: 30px;
+  bottom: -186%
+}
+
+.icone-coeur1:hover {
+  color: #9356DC;
+}
+
+.icone-coeur2 {
+  position: absolute;
+  right: 30px;
+  bottom: -236%
+}
+
+.icone-coeur2:hover {
+  color: #9356DC;
+}
+
+.icone-coeur3 {
+  position: absolute;
+  right: 30px;
+  bottom: -285%
+}
+
+.icone-coeur3:hover {
+  color: #9356DC;
+}
+
+
+
+/*.image-wrapper {
+  position: absolute;
+  width: 97%;
+  height: 231px;
+}*/
+
+.rectangle {
+  position: absolute;
+  top: 194%;
+  right: 30px;
+  padding: 5px 10px;
+  background-color: #99e2d0;
+  border-radius: 2px;
+  width: 80px;
+  height: 29px;
+}
+
+.rectangle1 {
+  position: absolute;
+  top: 243%;
+  right: 30px;
+  padding: 5px 10px;
+  background-color: #99e2d0;
+  border-radius: 2px;
+  width: 80px;
+  height: 29px;
+}
+
+.label {
+  color: #008766;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+
+}
+
+
+p.card-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 footer {
