@@ -29,52 +29,57 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   padding: 0;
   margin-right: 0px;
 }
-
-.logo-image.custom-width{
-  box-shadow: none;
-}
 .main-container header img {
-  width: 162px;
-  margin-left: 28px;
+  width: 197px;
+  height: 36px;
+  margin-top: 14px;
 }
 
 .icone-localisation {
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 5px;
+  gap: 17px;
   background-color: lightgray;
   margin-top: 20px;
   border-color: lightgray;
   height: 50px;
   width: 375px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .fa-solid.fa-location-dot {
   margin-top: 15px;
 }
 
-h2 {
+.siege {
   font-size: 16px;
   color: #000000;
   padding: 0;
   margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #000000;
+  padding: 0;
+  margin-top: 35px;
+  margin-bottom: 0;
+  margin-left: 18px;
 }
 
 main {
-  padding: 20px 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 2253px;
 }
 main .decouverte {
   text-align: center;
@@ -89,13 +94,13 @@ main h1 {
   margin-bottom: 15px;
   line-height: 28px;
   width: 100%;
-  margin-left: 5px;
   height: 68px;
 }
 main h3 {
   color: #000000;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 20px;
+  font-weight: initial;
 }
 main button.explorer {
   display: inline-block;
@@ -109,7 +114,6 @@ main button.explorer {
   cursor: pointer;
   width: 218px;
   height: 50px;
-  margin-top: 15px;
   font-size: 16px;
 }
 main .button {
@@ -124,7 +128,7 @@ main .button {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  background-color: #f7f7f7;
+  background-color: #f6f6f6;
   margin-bottom: 20px;
   margin-left: 20px;
   width: 75%;
@@ -134,6 +138,8 @@ main .button {
 main a {
   color: #000000;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 main .icone-fonctionnement {
   display: flex;
@@ -147,190 +153,131 @@ main .fas.fa-mobile-screen-button {
   height: 19.9px;
   position: relative;
   left: -33px;
-  color: #7E7E7E;
-}
-
-main .fas.fa-mobile-screen-button:hover {
   color: #9356DC;
 }
-
-
 main .fas.fa-list-ul {
   width: 13.02px;
   height: 19.9px;
   position: relative;
   left: -33px;
-  color: #7E7E7E;
-}
-
-main .fas.fa-list-ul:hover {
   color: #9356DC;
 }
-
-
 main .fas.fa-store {
   width: 13.02px;
   height: 19.9px;
   position: relative;
   left: -33px;
-  color: #7E7E7E;
-}
-
-main .fas.fa-store:hover:hover {
   color: #9356DC;
 }
-
 
 .restaurants {
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
 }
-
-.card {
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
+.restaurants .restaurants-cards {
+  margin-left: 17px;
+  margin-right: 17px;
 }
-
-
-.article.card {
-  display: flex;
-  justify-content: center;
+.restaurants .card {
   margin-top: 20px;
   width: 100%;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
-
-img {
+.restaurants img {
   width: 100%;
-  height: 231px;
   margin-top: 0px;
-  border-radius: 20px 20px 0px 0px;
-  margin-left: 0px;
+  border-radius: 15px 15px 0px 0px;
+  height: 251px;
 }
-
-.card-content {
-  margin-left: 20px;
+.restaurants .article {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-
-h3.card-title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-@media (max-width: 375px) {
-
-
-.icone-coeur {
-  position: absolute;
-  right: 30px;
-  bottom: -136%;
-}
-
-
-@media (hover: none){
-
-
-.icone-coeur:hover {
-  color: #9356DC;
-}
-
-
-}
-
-.icone-coeur1 {
-  position: absolute;
-  right: 30px;
-  bottom: -186%
-}
-
-.icone-coeur1:hover {
-  color: #9356DC;
-}
-
-.icone-coeur2 {
-  position: absolute;
-  right: 30px;
-  bottom: -236%
-}
-
-.icone-coeur2:hover {
-  color: #9356DC;
-}
-
-.icone-coeur3 {
-  position: absolute;
-  right: 30px;
-  bottom: -285%
-}
-
-.icone-coeur3:hover {
-  color: #9356DC;
-}
-
-
-
-/*.image-wrapper {
-  position: absolute;
-  width: 97%;
-  height: 231px;
-}*/
-
-.rectangle {
-  position: absolute;
-  top: 194%;
-  right: 30px;
-  padding: 5px 10px;
-  background-color: #99e2d0;
-  border-radius: 2px;
+.restaurants .rectangle {
   width: 80px;
   height: 29px;
-}
-
-.rectangle1 {
-  position: absolute;
-  top: 243%;
-  right: 30px;
-  padding: 5px 10px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 2px;
-  width: 80px;
-  height: 29px;
-}
-
-.label {
-  color: #008766;
-  margin-top: 5px;
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  align-items: center;
+  position: absolute;
+  top: 135%;
+  right: 10%;
 }
-
-
+.restaurants .label {
+  color: #008766;
 }
-
-
-p.card-subtitle {
+.restaurants .icone-coeur {
+  margin-left: 300px;
+}
+.restaurants .far.fa-heart {
+  transform: translate(0px, 25px);
+}
+.restaurants .rectangle1 {
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 187%;
+  right: 10%;
+}
+.restaurants .icone-coeur1 {
+  margin-left: 300px;
+}
+.restaurants .icone-coeur2 {
+  margin-left: 300px;
+}
+.restaurants .icone-coeur3 {
+  margin-left: 300px;
+}
+.restaurants .card-content {
+  padding-bottom: 10px;
+}
+.restaurants .card-title {
+  display: inline-block;
+  margin-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: bold;
+}
+.restaurants .card-subtitle {
+  margin-left: 10px;
+  margin-top: 0;
+  font-weight: initial;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  width: 375px;
+  height: 186px;
+  gap: 16px;
+  background-color: #000;
+  color: #ffffff;
 }
-footer .logo-image.custom-width {
-  max-width: 375px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-left: 30px;
-  color: #000000;
-  background-color: #ffffff;
+footer .logo-image img {
+  width: 139px;
+  height: 27px;
+  filter: brightness(0) invert(1);
+  font-size: 18px;
 }
-footer .logo-image.custom-width img {
-  width: 65%;
+footer a {
+  color: #ffffff;
+  font-size: 16px;
+}
+footer i {
+  color: #ffffff;
+}
+footer .links-section {
+  margin-bottom: 7px;
 }
 
 /*media query pour un écran d'une largeur de 767.98px*/
