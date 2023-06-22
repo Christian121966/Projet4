@@ -85,6 +85,7 @@ main .decouverte {
   text-align: center;
   padding: 35px 0;
   width: 375px;
+  height: 287px;
   background-color: #f7f7f7;
 }
 main h1 {
@@ -203,17 +204,8 @@ main .fas.fa-store {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 135%;
+  top: calc(141% + 20px);
   right: 10%;
-}
-.restaurants .label {
-  color: #008766;
-}
-.restaurants .icone-coeur {
-  margin-left: 300px;
-}
-.restaurants .far.fa-heart {
-  transform: translate(0px, 25px);
 }
 .restaurants .rectangle1 {
   width: 80px;
@@ -224,29 +216,28 @@ main .fas.fa-store {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 187%;
+  top: calc(193% + 20px);
   right: 10%;
 }
-.restaurants .icone-coeur1 {
-  margin-left: 300px;
+.restaurants > .label {
+  color: #008766;
 }
-.restaurants .icone-coeur2 {
-  margin-left: 300px;
+
+.far.fa-heart {
+  transform: translate(300px, 25px);
 }
-.restaurants .icone-coeur3 {
-  margin-left: 300px;
-}
-.restaurants .card-content {
+
+.card-content {
   padding-bottom: 10px;
 }
-.restaurants .card-title {
+.card-content .card-title {
   display: inline-block;
   margin-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
 }
-.restaurants .card-subtitle {
+.card-content .card-subtitle {
   margin-left: 10px;
   margin-top: 0;
   font-weight: initial;

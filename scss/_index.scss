@@ -95,6 +95,7 @@
                 text-align: center;
                 padding: 35px 0;
                 width: 375px;
+                height: 287px;
                 background-color: #f7f7f7;
                 }
     
@@ -203,7 +204,7 @@
                     align-items: center;
                 }
 
-                .rectangle {
+                .rectangle  {
                     width: 80px;
                     height: 29px;
                     background-color: #99E2D0;
@@ -212,20 +213,8 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    top: 135%;
+                    top: calc(141% + 20px);
                     right: 10%;
-                }
-
-                .label {
-                    color: #008766;
-                }
-
-                .icone-coeur {
-                    margin-left: 300px;
-                }
-
-                .far.fa-heart {
-                    transform: translate(0px, 25px);
                 }
 
                 .rectangle1 {
@@ -237,25 +226,23 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    top: 187%;
+                    top: calc(193% + 20px);
                     right: 10%;
                 }
 
-                .icone-coeur1 {
-                    margin-left: 300px;
+                & > .label {
+                    color: #008766;
                 }
 
-                .icone-coeur2 {
-                    margin-left: 300px;
-                }
+            }
 
-                .icone-coeur3 {
-                    margin-left: 300px;
+                
+                .far.fa-heart {
+                    transform: translate(300px, 25px);
                 }
 
                 .card-content {
                     padding-bottom: 10px;
-                }
 
                 .card-title {
                     display: inline-block;
@@ -270,8 +257,8 @@
                     margin-top: 0;
                     font-weight: initial;
                 }
-            
             }
+        
     
              
     footer {
