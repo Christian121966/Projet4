@@ -5,3 +5,7 @@ openclassrooms
 
 
 ### mes questions pour la prochaine session
+
+
+Hello Julien, j'ai un jeu de gauche à droite. Ce n'est pas la première fois que j'ai ce genre de problème.
+Pourrais-tu me dire, c'est dû à quoi et comment le résoudre. Je te remercie.
