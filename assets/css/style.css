@@ -10,7 +10,7 @@ body {
 
 .main-container {
   max-width: 375px;
-  width: 100%;
+  /*width: 100%;*/
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
@@ -273,6 +273,7 @@ footer .logo-image img {
   height: 27px;
   filter: brightness(0) invert(1);
   font-size: 18px;
+  margin-left: 22px;
 }
 footer a {
   color: #ffffff;
@@ -283,6 +284,10 @@ footer i {
 }
 footer .links-section {
   margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-left: 22px;
 }
 
 /*media query pour un écran d'une largeur de 767.98px*/
