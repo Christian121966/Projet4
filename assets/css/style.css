@@ -179,6 +179,14 @@ main .fas.fa-store {
   margin-right: 17px;
 }
 .restaurants .card {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.restaurants .card1 {
+  position: relative;
   margin-top: 20px;
   width: 100%;
   border-radius: 15px;
@@ -204,8 +212,14 @@ main .fas.fa-store {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: calc(141% + 20px);
-  right: 10%;
+  top: calc(4% + 5px);
+  right: 6%;
+  position: absolute;
+}
+.restaurants .article1 {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .restaurants .rectangle1 {
   width: 80px;
@@ -216,8 +230,8 @@ main .fas.fa-store {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: calc(193% + 20px);
-  right: 10%;
+  top: 15px;
+  right: 5%;
 }
 .restaurants > .label {
   color: #008766;

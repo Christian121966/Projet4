@@ -185,6 +185,15 @@
             }
     
                 .card {
+                    position: relative;
+                    margin-top: 20px;
+                    width: 100%;
+                    border-radius: 15px;
+                    background-color: #ffffff;
+                }
+
+                .card1 {
+                    position: relative;
                     margin-top: 20px;
                     width: 100%;
                     border-radius: 15px;
@@ -213,8 +222,15 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    top: calc(141% + 20px);
-                    right: 10%;
+                    top: calc(4% + 5px);
+                    right: 6%;
+                    position: absolute;
+                }
+
+                .article1 {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
                 }
 
                 .rectangle1 {
@@ -226,8 +242,8 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    top: calc(193% + 20px);
-                    right: 10%;
+                    top: 15px;
+                    right: 5%;
                 }
 
                 & > .label {
