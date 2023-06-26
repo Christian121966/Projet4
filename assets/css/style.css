@@ -185,7 +185,7 @@ main .fas.fa-store {
   border-radius: 15px;
   background-color: #ffffff;
 }
-.restaurants .card1 {
+.restaurants .card {
   position: relative;
   margin-top: 20px;
   width: 100%;
@@ -237,10 +237,53 @@ main .fas.fa-store {
   color: #008766;
 }
 
-.far.fa-heart {
-  transform: translate(300px, 25px);
+.icone-coeur {
+  /*transform: translate(300px, 25px)
+  margin-left: 300px;
+  display: flex;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  transform: translateX(135px) translateY(25px) scale(1.9);
 }
 
+.icone-coeur1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  transform: translateX(135px) translateY(25px) scale(1.9);
+}
+
+.icone-coeur2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  transform: translateX(135px) translateY(25px) scale(1.9);
+}
+
+.icone-coeur3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  transform: translateX(135px) translateY(25px) scale(1.9);
+}
+
+.fa-regular, .far {
+  display: flex;
+  transition: backgroung-color 0.1s;
+}
+.fa-regular:hover, .far:hover {
+  background-color: #c968db;
+  background-clip: content-box;
+}
+
+/*.far.fa-heart {
+    transform: translate(300px, 25px)
+}*/
 .card-content {
   padding-bottom: 10px;
 }
