@@ -23,7 +23,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .main-container header .logo-image {
   display: flex;
@@ -50,6 +49,7 @@ body {
   border-color: #EAEAEA;
   height: 50px;
   width: 375px;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .fa-solid.fa-location-dot {
@@ -88,7 +88,7 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 2253px;
+  height: 2240px;
 }
 main .decouverte {
   text-align: center;
@@ -138,7 +138,7 @@ main .button-explorer {
   cursor: pointer;
   width: 218px;
   height: 50px;
-  background-color: #c968db;
+  background-color: linear-gradient(#9356DC, #FF79DA);
 }
 main .button-text {
   font-size: 16px;
@@ -190,6 +190,7 @@ main .fas.fa-mobile-screen-button {
 }
 main .fas.fa-mobile-screen-button:hover {
   color: #9356DC;
+  cursor: pointer;
 }
 main .fas.fa-list-ul {
   width: 16px;
@@ -199,6 +200,7 @@ main .fas.fa-list-ul {
 }
 main .fas.fa-list-ul:hover {
   color: #9356DC;
+  cursor: pointer;
 }
 main .fas.fa-store {
   width: 18px;
@@ -208,6 +210,7 @@ main .fas.fa-store {
 }
 main .fas.fa-store:hover {
   color: #9356DC;
+  cursor: pointer;
 }
 
 .restaurants {
@@ -302,8 +305,8 @@ main .fas.fa-store:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: calc(4% + 5px);
-  right: 6%;
+  top: calc(0% + 5px);
+  right: -5%;
 }
 .restaurants .rectangle1 {
   width: 80px;
@@ -314,8 +317,8 @@ main .fas.fa-store:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 15px;
-  right: 5%;
+  top: 5px;
+  right: -5%;
 }
 .restaurants > .label {
   color: #008766;
@@ -328,44 +331,29 @@ main .fas.fa-store:hover {
   align-items: center;*/
   width: 22px;
   height: 21px;
-  background-color: transparent;
   right: -255px;
   top: 30px;
-  border: 1px solid #FFF;
 }
 
-.icone-coeur::before {
-  content: "";
+.icone-coeur i {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: #c968db;
+}
+
+.fas.fa-heart {
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
-  overflow: hidden;
+  transition: all 200ms;
 }
 
-.icone-coeur:hover::before {
+.fas.fa-heart:hover {
   opacity: 1;
-  overflow: hidden;
 }
 
-.icone-coeur:hover {
-  background-color: #c968db;
-  border: none;
-}
-
-/*.fa-regular, .far {
-    display: flex;
-    transition: backgroung-color 0.1s;
-
-    &:hover {
-        background-color: $icone-coeur-color;
-        background-clip: content-box;
-    }
-}*/
-/*.far.fa-heart {
-    transform: translate(300px, 25px)
-}*/
 footer {
   display: flex;
   flex-direction: column;
