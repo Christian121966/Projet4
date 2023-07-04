@@ -1,0 +1,46 @@
+@media screen and (max-width: 375px) {
+  .main-container {
+    max-width: 375px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    header.logo-ohmyfood {
+      width: 375px;
+      height: 63px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
+
+  header img {
+    width: 375px;
+    height: 63px;
+    font-family: shrikhand; }
+
+  img {
+    width: 375px;
+    height: 275px;
+    display: block; }
+
+  main {
+    width: 375px;
+    height: 1307px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    border-radius: 40px 40px 0 0;
+    background-color: #f6f6f6; } }
+
+/*# sourceMappingURL=style.css.map */
