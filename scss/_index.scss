@@ -1,5 +1,4 @@
-@import '_variables';
-@import '_mixin';    
+
     //styles
     
     body {
@@ -11,8 +10,8 @@
         padding-right: 0;
         }
     
+
         .main-container {
-            
             max-width: 375px;
             box-sizing: border-box;
             margin: 0 auto;
@@ -41,6 +40,10 @@
                         img {
                             width: 162px;
                             height: 64px;
+                            font-size: 30px;
+                            font-weight: 400;
+                            font-style: normal;
+                            line-height: normal;
                             margin-top: 14px;
                             font-family: shrikhand;
                         }
@@ -83,7 +86,7 @@
                     font-size: 24px;
                     font-weight: 700;
                     font-family: Roboto;
-                    color: $title-color;
+                    color: #000000;
                     padding: 0;
                     margin-top: 24px;
                     margin-bottom: 24px;
@@ -108,7 +111,7 @@
                 }
     
             h1 {
-                color: $title-color;
+                color: #000000;
                 font-size: 24px;
                 color: #000000;
                 font-weight: 700;
@@ -284,7 +287,7 @@
                     width: 267px;
                     height: 20px;
                     margin-left: -27px;
-                    margin-top: 0;
+                    margin-top: 20px;
                     margin-bottom: 0;
                     font-weight: 700;
                     color: $title-color;
