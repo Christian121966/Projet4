@@ -10,7 +10,17 @@
     cursor: pointer;
 }
 
-
+@mixin button-styles-vierge {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $button-border-radius;
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    color: $button-text-color;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
 
 @mixin card-style {
     width: 767.98px;

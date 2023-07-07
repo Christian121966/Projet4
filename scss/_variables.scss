@@ -1,7 +1,7 @@
 // _variables.scss
 
 $button-bg-color: #9356DC;
-$button-text-color: #FF79DA;
+$button-text-color: #FFFFFF;
 $button-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 $button-border-radius: 25px;
 $button-transform: matrix(1, 0, 0, -1, 0, 0);
@@ -15,4 +15,8 @@ $secondary-color: #FF79DA;
 $card-border-radius: 10px;
 $card-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 $background: var(--background, #F6F6F6);
+$button-gradient: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+$police1: 'Shrikhand', cursive;
+$police2: 'Roboto', sans-serif;
 $linearGradient: linear-gradient($primary-color, $secondary-color);
+
