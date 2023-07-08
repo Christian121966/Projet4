@@ -9,7 +9,7 @@ body {
 }
 
 .main-container {
-  max-width: 375px;
+  width: 375px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
@@ -43,6 +43,45 @@ body {
   font-family: shrikhand;
 }
 
+@media screen and (max-width: 767px) {
+  .main-container {
+    width: 767px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 767px;
+  }
+  .main-container header .logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0;
+    margin-right: 0px;
+    width: 200px;
+    height: 34.2px;
+  }
+  .main-container header img {
+    width: 200px;
+    height: 34.2px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 14px;
+    font-family: shrikhand;
+  }
+}
 .icone-localisation {
   display: flex;
   justify-content: center;
@@ -64,6 +103,7 @@ body {
 
 .siege {
   font-size: 16px;
+  font-style: normal;
   color: #353535;
   padding: 0;
   margin-top: 15px;
@@ -85,6 +125,20 @@ h2 {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .icone-localisation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 17px;
+    background-color: #EAEAEA;
+    margin-top: 20px;
+    border-color: #EAEAEA;
+    height: 50px;
+    width: 767px;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
+  }
+}
 main {
   padding: 0;
   display: flex;
@@ -93,13 +147,39 @@ main {
   justify-content: center;
   width: 100%;
   height: 2240px;
+  /*@media screen and (max-width: 767px) {
+      .fonctionnement {
+          background-color: #FFF;
+          position: absolute;
+          flex-direction: row;
+      }
+
+  }*/
 }
-main .decouverte {
+main section.decouverte {
+  display: flex;
   text-align: center;
   padding: 35px 0;
   width: 375px;
   height: 287px;
   background-color: #F6F6F6;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  main section.decouverte {
+    display: flex;
+    text-align: center;
+    padding: 35px 0;
+    width: 767px;
+    height: 287px;
+    background-color: #F6F6F6;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
 }
 main h1 {
   color: #000000;
@@ -148,22 +228,71 @@ main .button-explorer:hover {
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 50%, #e9ddf8 100%);
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
-main .button-text {
-  font-size: 16px;
-  width: 180.495px;
-  height: 24px;
-  font-weight: 500;
-  font-family: Roboto;
-  /*color: #FFF;*/
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  margin-left: 20px;
+@media screen and (max-width: 767px) {
+  main h1 {
+    color: #000000;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 28px;
+    width: 645px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: roboto;
+    flex-direction: row;
+    margin-left: 42px;
+  }
+  main h3 {
+    display: flex;
+    text-align: center;
+    color: #353535;
+    font-size: 18px;
+    font-family: roboto;
+    margin-bottom: 20px;
+    font-weight: 300;
+    width: 531px;
+    height: 46px;
+    margin-left: 34px;
+    margin-right: 26px;
+  }
+  main .button-explorer {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 218px;
+    height: 50px;
+    transition: background 5s;
+  }
+  main .button-explorer:hover {
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 50%, #e9ddf8 100%);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  main .button-text {
+    font-size: 16px;
+    width: 180.495px;
+    height: 24px;
+    font-weight: 500;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-left: 20px;
+  }
 }
 main .fonctionnement {
+  display: flex;
   background-color: #FFF;
   position: absolute;
 }
@@ -179,6 +308,7 @@ main a {
   height: 15.67px;
   margin-left: 40.02px;
   margin-top: 7.5px;
+  scroll-behavior: smooth;
 }
 main .icone-fonctionnement {
   width: 322.486px;
@@ -243,16 +373,90 @@ main .icone-fonctionnement .fas.fa-store:hover {
   cursor: pointer;
   font-weight: 900;
 }
+@media screen and (max-width: 767px) {
+  main a {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto;
+    width: 211px;
+    height: 15.67px;
+    margin-left: 40.02px;
+    margin-top: 7.5px;
+    scroll-behavior: smooth;
+  }
+  main .icone-fonctionnement {
+    width: 322.486px;
+    height: 72.379px;
+    margin-top: 13px;
+    position: relative;
+    margin-bottom: 24.92px;
+    display: flex;
+    justify-content: center;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  main .icone-fonctionnement .fonctionnement-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    flex-shrink: 0;
+    left: -10px;
+    top: 20px;
+    cursor: pointer;
+  }
+  main .icone-fonctionnement .fas.fa-mobile-screen-button {
+    width: 13.19px;
+    height: 19.903px;
+    margin-top: 24.5px;
+    color: #7E7E7E;
+  }
+  main .icone-fonctionnement .fas.fa-mobile-screen-button:hover {
+    color: #9356DC;
+    cursor: pointer;
+    font-weight: 900;
+  }
+  main .icone-fonctionnement .fas.fa-list-ul {
+    width: 16px;
+    height: 15.92px;
+    margin-top: 24.5px;
+    color: #7E7E7E;
+  }
+  main .icone-fonctionnement .fas.fa-list-ul:hover {
+    color: #9356DC;
+    cursor: pointer;
+    font-weight: 900;
+  }
+  main .icone-fonctionnement .fas.fa-store {
+    width: 18px;
+    height: 17.91px;
+    margin-top: 24.5px;
+    color: #7E7E7E;
+  }
+  main .icone-fonctionnement .fas.fa-store:hover {
+    color: #9356DC;
+    cursor: pointer;
+    font-weight: 900;
+  }
+}
 
 .restaurants {
   background-color: var(--background, #F6F6F6);
   width: 375px;
   height: 1583.64px;
-  /*.article1 {
-      position: relative;
-      display: flex;
-      align-items: center;
-  }*/
 }
 .restaurants .restaurants-cards {
   margin-left: 17px;
@@ -264,8 +468,6 @@ main .icone-fonctionnement .fas.fa-store:hover {
   gap: 18px;
 }
 .restaurants .card {
-  /*position: relative;
-  margin-top: 20px;*/
   width: 340px;
   height: 308px;
   border-radius: 15px;
@@ -302,10 +504,6 @@ main .icone-fonctionnement .fas.fa-store:hover {
   color: #000000;
   font-size: 18px;
   font-family: Roboto;
-  /*position: absolute;*/
-  /*bottom: 10px;
-  left: 10px;
-  margin: 0;*/
 }
 .restaurants .card-subtitle {
   display: flex;
@@ -318,9 +516,6 @@ main .icone-fonctionnement .fas.fa-store:hover {
   font-family: Roboto;
   color: #000000;
   position: absolute;
-  /*bottom: -20px;
-  left: 10px;
-  margin: 0;*/
 }
 .restaurants .article {
   position: relative;
