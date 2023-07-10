@@ -12,9 +12,15 @@
         padding-right: 0;
         flex-direction: column;
         }
+
+        .visual-hidden {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
         
         .main-container {
-            width: 375px;
+            width: 100%;
             box-sizing: border-box;
             margin: 0 auto;
             padding: 0;
@@ -24,6 +30,7 @@
             justify-content: center;
     
                 header {
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -51,16 +58,9 @@
                     }
                 }
 
-                @media screen and (max-width: 767px) {
+                @media screen and (min-width: 767px) {
                     .main-container {
-                        width: 767px;
-                        box-sizing: border-box;
-                        margin: 0 auto;
-                        padding: 0;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+                       
                 
                             header {
                                 display: flex;
@@ -103,7 +103,7 @@
                     margin-top: 20px;
                     border-color: #EAEAEA;
                     height: 50px;
-                    width: 375px;
+                    width: 100%;
                     box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
                 }
 
@@ -138,7 +138,7 @@
                 }
 
 
-                @media screen and (max-width: 767px) {
+                @media screen and (min-width: 767px) {
 
                     .icone-localisation {
                     display: flex;
@@ -167,7 +167,7 @@
                 display: flex;
                 text-align: center;
                 padding: 35px 0;
-                width: 375px;
+                width: 100%;
                 height: 287px;
                 background-color: #F6F6F6;
                 align-items: center;
@@ -175,13 +175,13 @@
                 align-items: center;
                 }
 
-                @media screen and (max-width: 767px) {
+                @media screen and (min-width: 767px) {
 
                     section.decouverte {
                         display: flex;
                         text-align: center;
                         padding: 35px 0;
-                        width: 767px;
+                        width: 100%;
                         height: 287px;
                         background-color: #F6F6F6;
                         align-items: center;
@@ -229,6 +229,9 @@
                     width: 218px;
                     height: 50px;
                     transition: background 5s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 
 
                 &:hover {
@@ -240,7 +243,7 @@
             }
 
 
-            @media screen and (max-width: 767px) {
+            @media screen and (min-width: 767px) {
                 h1 {
                     color: #000000;
                     font-size: 24px;
@@ -307,18 +310,19 @@
                 .fonctionnement {
                     display: flex;
                     background-color: #FFF;
-                    position: absolute;
+                    flex-direction: column;
+                    gap: 15px;
                 }
                 
-                
-                /*@media screen and (max-width: 767px) {
+            
+                /*@media screen and (min-width: 767px) {
                     .fonctionnement {
                         background-color: #FFF;
                         position: absolute;
                         flex-direction: row;
-                    }
+                    }*/
                     
-                }*/
+                }
 
                 a {
                     display: flex;
@@ -338,9 +342,7 @@
                 .icone-fonctionnement {
                     width: 322.486px;
                     height: 72.379px;
-                    margin-top: 13px;
                     position: relative;
-                    margin-bottom: 24.92px;
                     display: flex;
                     justify-content: center;
                     background-color: #F6F6F6;
@@ -365,6 +367,7 @@
                         top: 20px;
                         cursor: pointer;
                       }
+                    }
                       
 
     
@@ -408,9 +411,9 @@
                     cursor: pointer;
                     font-weight: 900;
                 }
-        }
+        
 
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 767px) {
 
             a {
                 display: flex;
@@ -430,9 +433,7 @@
             .icone-fonctionnement {
                 width: 322.486px;
                 height: 72.379px;
-                margin-top: 13px;
                 position: relative;
-                margin-bottom: 24.92px;
                 display: flex;
                 justify-content: center;
                 background-color: #F6F6F6;
@@ -505,12 +506,11 @@
         }
 
         
-    }  
+      
 
             .restaurants {
                 background-color: $background;
-                width: 375px;
-                height: 1583.64px;
+                width: 100%;
 
             .restaurants-cards {
                 margin-left: 17px;

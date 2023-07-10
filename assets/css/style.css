@@ -8,8 +8,14 @@ body {
   flex-direction: column;
 }
 
+.visual-hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
 .main-container {
-  width: 375px;
+  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
@@ -19,6 +25,7 @@ body {
   justify-content: center;
 }
 .main-container header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,17 +50,7 @@ body {
   font-family: shrikhand;
 }
 
-@media screen and (max-width: 767px) {
-  .main-container {
-    width: 767px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+@media screen and (min-width: 767px) {
   .main-container header {
     display: flex;
     flex-direction: column;
@@ -91,7 +88,7 @@ body {
   margin-top: 20px;
   border-color: #EAEAEA;
   height: 50px;
-  width: 375px;
+  width: 100%;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -125,7 +122,7 @@ h2 {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .icone-localisation {
     display: flex;
     justify-content: center;
@@ -147,32 +144,30 @@ main {
   justify-content: center;
   width: 100%;
   height: 2240px;
-  /*@media screen and (max-width: 767px) {
+  /*@media screen and (min-width: 767px) {
       .fonctionnement {
           background-color: #FFF;
           position: absolute;
           flex-direction: row;
-      }
-
-  }*/
+      }*/
 }
 main section.decouverte {
   display: flex;
   text-align: center;
   padding: 35px 0;
-  width: 375px;
+  width: 100%;
   height: 287px;
   background-color: #F6F6F6;
   align-items: center;
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   main section.decouverte {
     display: flex;
     text-align: center;
     padding: 35px 0;
-    width: 767px;
+    width: 100%;
     height: 287px;
     background-color: #F6F6F6;
     align-items: center;
@@ -223,12 +218,15 @@ main .button-explorer {
   width: 218px;
   height: 50px;
   transition: background 5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .button-explorer:hover {
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 50%, #e9ddf8 100%);
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   main h1 {
     color: #000000;
     font-size: 24px;
@@ -294,9 +292,11 @@ main .button-explorer:hover {
 main .fonctionnement {
   display: flex;
   background-color: #FFF;
-  position: absolute;
+  flex-direction: column;
+  gap: 15px;
 }
-main a {
+
+a {
   display: flex;
   flex-direction: column;
   color: #000000;
@@ -310,19 +310,18 @@ main a {
   margin-top: 7.5px;
   scroll-behavior: smooth;
 }
-main .icone-fonctionnement {
+
+.icone-fonctionnement {
   width: 322.486px;
   height: 72.379px;
-  margin-top: 13px;
   position: relative;
-  margin-bottom: 24.92px;
   display: flex;
   justify-content: center;
   background-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-main .icone-fonctionnement .fonctionnement-number {
+.icone-fonctionnement .fonctionnement-number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,41 +339,48 @@ main .icone-fonctionnement .fonctionnement-number {
   top: 20px;
   cursor: pointer;
 }
-main .icone-fonctionnement .fas.fa-mobile-screen-button {
+
+.fas.fa-mobile-screen-button {
   width: 13.19px;
   height: 19.903px;
   margin-top: 24.5px;
   color: #7E7E7E;
 }
-main .icone-fonctionnement .fas.fa-mobile-screen-button:hover {
+
+.fas.fa-mobile-screen-button:hover {
   color: #9356DC;
   cursor: pointer;
   font-weight: 900;
 }
-main .icone-fonctionnement .fas.fa-list-ul {
+
+.fas.fa-list-ul {
   width: 16px;
   height: 15.92px;
   margin-top: 24.5px;
   color: #7E7E7E;
 }
-main .icone-fonctionnement .fas.fa-list-ul:hover {
+
+.fas.fa-list-ul:hover {
   color: #9356DC;
   cursor: pointer;
   font-weight: 900;
 }
-main .icone-fonctionnement .fas.fa-store {
+
+.fas.fa-store {
   width: 18px;
   height: 17.91px;
   margin-top: 24.5px;
   color: #7E7E7E;
 }
-main .icone-fonctionnement .fas.fa-store:hover {
+
+.fas.fa-store:hover {
   color: #9356DC;
   cursor: pointer;
   font-weight: 900;
 }
-@media screen and (max-width: 767px) {
-  main a {
+
+@media screen and (min-width: 767px) {
+  a {
     display: flex;
     flex-direction: column;
     color: #000000;
@@ -388,19 +394,17 @@ main .icone-fonctionnement .fas.fa-store:hover {
     margin-top: 7.5px;
     scroll-behavior: smooth;
   }
-  main .icone-fonctionnement {
+  .icone-fonctionnement {
     width: 322.486px;
     height: 72.379px;
-    margin-top: 13px;
     position: relative;
-    margin-bottom: 24.92px;
     display: flex;
     justify-content: center;
     background-color: #F6F6F6;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   }
-  main .icone-fonctionnement .fonctionnement-number {
+  .icone-fonctionnement .fonctionnement-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,45 +422,43 @@ main .icone-fonctionnement .fas.fa-store:hover {
     top: 20px;
     cursor: pointer;
   }
-  main .icone-fonctionnement .fas.fa-mobile-screen-button {
+  .icone-fonctionnement .fas.fa-mobile-screen-button {
     width: 13.19px;
     height: 19.903px;
     margin-top: 24.5px;
     color: #7E7E7E;
   }
-  main .icone-fonctionnement .fas.fa-mobile-screen-button:hover {
+  .icone-fonctionnement .fas.fa-mobile-screen-button:hover {
     color: #9356DC;
     cursor: pointer;
     font-weight: 900;
   }
-  main .icone-fonctionnement .fas.fa-list-ul {
+  .icone-fonctionnement .fas.fa-list-ul {
     width: 16px;
     height: 15.92px;
     margin-top: 24.5px;
     color: #7E7E7E;
   }
-  main .icone-fonctionnement .fas.fa-list-ul:hover {
+  .icone-fonctionnement .fas.fa-list-ul:hover {
     color: #9356DC;
     cursor: pointer;
     font-weight: 900;
   }
-  main .icone-fonctionnement .fas.fa-store {
+  .icone-fonctionnement .fas.fa-store {
     width: 18px;
     height: 17.91px;
     margin-top: 24.5px;
     color: #7E7E7E;
   }
-  main .icone-fonctionnement .fas.fa-store:hover {
+  .icone-fonctionnement .fas.fa-store:hover {
     color: #9356DC;
     cursor: pointer;
     font-weight: 900;
   }
 }
-
 .restaurants {
   background-color: var(--background, #F6F6F6);
-  width: 375px;
-  height: 1583.64px;
+  width: 100%;
 }
 .restaurants .restaurants-cards {
   margin-left: 17px;
