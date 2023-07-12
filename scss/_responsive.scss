@@ -1,0 +1,223 @@
+@media screen and (max-width: 767px) {
+    .main-container {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                .logo-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ffffff;
+                    padding: 0;
+                    margin-right: 0px;
+                    width: 200px;
+                    height: 34.20px;
+                }
+                
+                    & img {
+                        width: 200px;
+                        height: 34.20px;
+                        font-size: 30px;
+                        font-weight: 400;
+                        font-style: normal;
+                        line-height: normal;
+                        margin-top: 14px;
+                        font-family: shrikhand;
+                    }
+                }
+            }
+
+            .icone-localisation {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 17px;
+            background-color: #EAEAEA;
+            margin-top: 20px;
+            border-color: #EAEAEA;
+            height: 50px;
+            width: 100%;
+            box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: $police2;
+            color: $title-color;
+            padding: 0;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            margin-left: 20px;
+        }
+    
+        h1 {
+            color: #000000;
+            font-size: 24px;
+            color: #000000;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 28px;
+            width: 645px;
+            height: 47px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-family: roboto;
+            flex-direction: row;
+            margin-left: 42px;
+            }
+
+        h3 {
+            display: flex;
+            text-align: center;
+            color: #353535;
+            font-size: 18px;
+            font-family: roboto;
+            margin-bottom: 20px;
+            font-weight: 300;
+            width: 531px;
+            height: 46px;
+            margin-left: 34px;
+            margin-right: 26px
+            }
+
+            .button-explorer {
+                @include button-styles-vierge;
+                width: 218px;
+                height: 50px;
+                transition: background 5s;
+            
+
+            &:hover {
+                $hover-color: mix(#9356DC, white, 20%);
+                background: linear-gradient(175deg, #9356DC 0%, #FF79DA 50%, $hover-color 100%);
+                box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+            }
+
+        }
+
+        .button-text {
+            font-size: 16px;
+            width: 180.495px;
+            height: 24px;
+            font-weight: 500;
+            font-family: Roboto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 13px;
+            margin-bottom: 13px;
+            margin-left: 20px;
+        }
+
+        .fonctionnement {
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF;
+            
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            color: $title-color;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Roboto;
+            width: 211px;
+            height: 15.67px;
+            margin-left: 40.02px;
+            margin-top: 7.5px;
+            scroll-behavior: smooth;
+        }
+
+        .icone-fonctionnement {
+            width: 322.486px;
+            height: 72.379px;
+            margin-top: 13px;
+            position: relative;
+            margin-bottom: 24.92px;
+            display: flex;
+            justify-content: center;
+            background-color: #F6F6F6;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        
+            .fonctionnement-number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #9356DC;
+                color: #FFFFFF;
+                font-size: 14px;
+                font-family: Roboto;
+                font-weight: 500;
+                flex-shrink: 0;
+                left: -10px;
+                top: 20px;
+                cursor: pointer;
+              }
+              
+        .fas.fa-mobile-screen-button {
+            width: 13.19px;
+            height: 19.903px;
+            margin-top: 24.5px;
+            color: #7E7E7E;
+            
+        }
+
+        .fas.fa-mobile-screen-button:hover {
+            color: $primary-color;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .fas.fa-list-ul {
+            width: 16px;
+            height: 15.92px;
+            margin-top: 24.5px;
+            color: #7E7E7E;
+        }
+
+        .fas.fa-list-ul:hover {
+            color: $primary-color;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .fas.fa-store {
+            width: 18px;
+            height: 17.91px;
+            margin-top: 24.5px;
+            color: #7E7E7E;
+        }
+
+        .fas.fa-store:hover {
+            color: $primary-color;
+            cursor: pointer;
+            font-weight: 900;
+        }
+    }
+}
