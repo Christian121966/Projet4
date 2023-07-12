@@ -1,606 +1,73 @@
-body {
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
-  flex-direction: column; }
+/*
+Error: File to import not found or unreadable: /scss/variables.
+        on line 1 of scss/responsive/_responsive.scss
+        from line 3 of scss/style.scss
 
-.main-container {
-  width: 375px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .main-container header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .main-container header .logo-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #ffffff;
-      padding: 0;
-      margin-right: 0px; }
-    .main-container header img {
-      width: 162px;
-      height: 44px;
-      font-size: 30px;
-      font-weight: 400;
-      font-style: normal;
-      line-height: normal;
-      margin-top: 14px;
-      font-family: shrikhand; }
+1: 
+2: 
+3: @import '../scss/responsive/_responsive';
+4: @import '_variables';
+5: @import 'mixin';
+6: @import '_index';
 
-@media screen and (max-width: 767px) {
-  .main-container {
-    width: 767px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .main-container header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 767px; }
-      .main-container header .logo-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff;
-        padding: 0;
-        margin-right: 0px;
-        width: 200px;
-        height: 34.20px; }
-      .main-container header img {
-        width: 200px;
-        height: 34.20px;
-        font-size: 30px;
-        font-weight: 400;
-        font-style: normal;
-        line-height: normal;
-        margin-top: 14px;
-        font-family: shrikhand; } }
-.icone-localisation {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: 17px;
-  background-color: #EAEAEA;
-  margin-top: 20px;
-  border-color: #EAEAEA;
-  height: 50px;
-  width: 375px;
-  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4); }
-
-.fa-solid.fa-location-dot {
-  margin-top: 15px;
-  width: 12px;
-  height: 16px; }
-
-.siege {
-  font-size: 16px;
-  font-style: normal;
-  color: #353535;
-  padding: 0;
-  margin-top: 15px;
-  margin-bottom: 0;
-  font-weight: 500;
-  font-family: roboto; }
-
-h2 {
-  display: flex;
-  flex-direction: column;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: Roboto;
-  color: #000000;
-  padding: 0;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 20px; }
-
-@media screen and (max-width: 767px) {
-  .icone-localisation {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 17px;
-    background-color: #EAEAEA;
-    margin-top: 20px;
-    border-color: #EAEAEA;
-    height: 50px;
-    width: 767px;
-    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4); } }
-main {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 2240px;
-  /*@media screen and (max-width: 767px) {
-      .fonctionnement {
-          background-color: #FFF;
-          position: absolute;
-          flex-direction: row;
-      }*/ }
-  main section.decouverte {
-    display: flex;
-    text-align: center;
-    padding: 35px 0;
-    width: 375px;
-    height: 287px;
-    background-color: #F6F6F6;
-    align-items: center;
-    flex-direction: column;
-    align-items: center; }
-  @media screen and (max-width: 767px) {
-    main section.decouverte {
-      display: flex;
-      text-align: center;
-      padding: 35px 0;
-      width: 767px;
-      height: 287px;
-      background-color: #F6F6F6;
-      align-items: center;
-      flex-direction: column;
-      align-items: center;
-      gap: 18px; } }
-  main h1 {
-    color: #000000;
-    font-size: 24px;
-    color: #000000;
-    font-weight: 700;
-    margin-bottom: 15px;
-    line-height: 28px;
-    width: 275px;
-    height: 68px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: roboto;
-    flex-direction: column;
-    margin-left: 42px; }
-  main h3 {
-    display: flex;
-    text-align: center;
-    color: #353535;
-    font-size: 18px;
-    font-family: roboto;
-    margin-bottom: 20px;
-    font-weight: 300;
-    width: 315px;
-    height: 46px;
-    margin-left: 34px;
-    margin-right: 26px; }
-  main .button-explorer {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    width: 218px;
-    height: 50px;
-    transition: background 5s; }
-    main .button-explorer:hover {
-      background: linear-gradient(175deg, #9356DC 0%, #FF79DA 50%, #e9ddf8 100%);
-      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); }
-  @media screen and (max-width: 767px) {
-    main h1 {
-      color: #000000;
-      font-size: 24px;
-      color: #000000;
-      font-weight: 700;
-      margin-bottom: 15px;
-      line-height: 28px;
-      width: 645px;
-      height: 47px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      font-family: roboto;
-      flex-direction: row;
-      margin-left: 42px; }
-    main h3 {
-      display: flex;
-      text-align: center;
-      color: #353535;
-      font-size: 18px;
-      font-family: roboto;
-      margin-bottom: 20px;
-      font-weight: 300;
-      width: 531px;
-      height: 46px;
-      margin-left: 34px;
-      margin-right: 26px; }
-    main .button-explorer {
-      display: inline-block;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 25px;
-      background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-      color: #FFFFFF;
-      text-decoration: none;
-      text-align: center;
-      cursor: pointer;
-      width: 218px;
-      height: 50px;
-      transition: background 5s; }
-      main .button-explorer:hover {
-        background: linear-gradient(175deg, #9356DC 0%, #FF79DA 50%, #e9ddf8 100%);
-        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); }
-    main .button-text {
-      font-size: 16px;
-      width: 180.495px;
-      height: 24px;
-      font-weight: 500;
-      font-family: Roboto;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-      margin-top: 13px;
-      margin-bottom: 13px;
-      margin-left: 20px; } }
-  main .fonctionnement {
-    display: flex;
-    background-color: #FFF;
-    /*position: absolute;*/ }
-
-a {
-  display: flex;
-  flex-direction: column;
-  color: #000000;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Roboto;
-  width: 211px;
-  height: 15.67px;
-  margin-left: 40.02px;
-  margin-top: 7.5px;
-  scroll-behavior: smooth; }
-
-.icone-fonctionnement {
-  width: 322.486px;
-  height: 72.379px;
-  margin-top: 13px;
-  position: relative;
-  margin-bottom: 24.92px;
-  display: flex;
-  justify-content: center;
-  background-color: #F6F6F6;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); }
-  .icone-fonctionnement .fonctionnement-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #9356DC;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 500;
-    flex-shrink: 0;
-    left: -10px;
-    top: 20px;
-    cursor: pointer; }
-
-.fas.fa-mobile-screen-button {
-  width: 13.19px;
-  height: 19.903px;
-  margin-top: 24.5px;
-  color: #7E7E7E; }
-
-.fas.fa-mobile-screen-button:hover {
-  color: #9356DC;
-  cursor: pointer;
-  font-weight: 900; }
-
-.fas.fa-list-ul {
-  width: 16px;
-  height: 15.92px;
-  margin-top: 24.5px;
-  color: #7E7E7E; }
-
-.fas.fa-list-ul:hover {
-  color: #9356DC;
-  cursor: pointer;
-  font-weight: 900; }
-
-.fas.fa-store {
-  width: 18px;
-  height: 17.91px;
-  margin-top: 24.5px;
-  color: #7E7E7E; }
-
-.fas.fa-store:hover {
-  color: #9356DC;
-  cursor: pointer;
-  font-weight: 900; }
-
-@media screen and (max-width: 767px) {
-  a {
-    display: flex;
-    flex-direction: column;
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Roboto;
-    width: 211px;
-    height: 15.67px;
-    margin-left: 40.02px;
-    margin-top: 7.5px;
-    scroll-behavior: smooth; }
-
-  .icone-fonctionnement {
-    width: 322.486px;
-    height: 72.379px;
-    margin-top: 13px;
-    position: relative;
-    margin-bottom: 24.92px;
-    display: flex;
-    justify-content: center;
-    background-color: #F6F6F6;
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); }
-    .icone-fonctionnement .fonctionnement-number {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background-color: #9356DC;
-      color: #FFFFFF;
-      font-size: 14px;
-      font-family: Roboto;
-      font-weight: 500;
-      flex-shrink: 0;
-      left: -10px;
-      top: 20px;
-      cursor: pointer; }
-    .icone-fonctionnement .fas.fa-mobile-screen-button {
-      width: 13.19px;
-      height: 19.903px;
-      margin-top: 24.5px;
-      color: #7E7E7E; }
-    .icone-fonctionnement .fas.fa-mobile-screen-button:hover {
-      color: #9356DC;
-      cursor: pointer;
-      font-weight: 900; }
-    .icone-fonctionnement .fas.fa-list-ul {
-      width: 16px;
-      height: 15.92px;
-      margin-top: 24.5px;
-      color: #7E7E7E; }
-    .icone-fonctionnement .fas.fa-list-ul:hover {
-      color: #9356DC;
-      cursor: pointer;
-      font-weight: 900; }
-    .icone-fonctionnement .fas.fa-store {
-      width: 18px;
-      height: 17.91px;
-      margin-top: 24.5px;
-      color: #7E7E7E; }
-    .icone-fonctionnement .fas.fa-store:hover {
-      color: #9356DC;
-      cursor: pointer;
-      font-weight: 900; } }
-.restaurants {
-  background-color: var(--background, #F6F6F6);
-  width: 375px;
-  height: 1583.64px; }
-  .restaurants .restaurants-cards {
-    margin-left: 17px;
-    margin-right: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 340px;
-    gap: 18px; }
-  .restaurants .card {
-    width: 340px;
-    height: 308px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; }
-  .restaurants .card-link {
-    display: flex;
-    flex-direction: column;
-    width: 267px;
-    height: 20px;
-    color: #000000;
-    font-size: 18px;
-    font-family: Roboto;
-    font-weight: 700;
-    position: relative; }
-  .restaurants img {
-    width: 334px;
-    height: 231px;
-    margin-top: -8px;
-    border-radius: 15px 15px 0px 0px;
-    margin-left: -37px;
-    margin-right: 3px; }
-  .restaurants .card-title {
-    display: flex;
-    width: 267px;
-    height: 20px;
-    margin-left: -27px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-weight: 700;
-    color: #000000;
-    font-size: 18px;
-    font-family: Roboto; }
-  .restaurants .card-subtitle {
-    display: flex;
-    width: 247px;
-    height: 24px;
-    margin-left: -27px;
-    margin-top: 0;
-    font-weight: 300;
-    font-size: 17px;
-    font-family: Roboto;
-    color: #000000;
-    position: absolute; }
-  .restaurants .article {
-    position: relative;
-    display: flex;
-    align-items: center; }
-  .restaurants .rectangle {
-    width: 80px;
-    height: 29px;
-    background-color: #99E2D0;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: calc(0% + 5px);
-    right: -5%; }
-  .restaurants .rectangle1 {
-    width: 80px;
-    height: 29px;
-    background-color: #99E2D0;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 5px;
-    right: -5%; }
-  .restaurants > .label {
-    color: #008766; }
-
-.icone-coeur {
-  position: relative;
-  display: inline-block;
-  width: 22px;
-  height: 21px;
-  right: -255px;
-  top: 30px; }
-
-.icone-coeur i {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.fas.fa-heart {
-  color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  opacity: 0;
-  transition: all 200ms; }
-
-.fas.fa-heart:hover {
-  opacity: 1;
-  animation: fillheart 2s; }
-
-@keyframes fillheart {
-  0% {
-    background-position: 0 0; }
-  100% {
-    background-position: 100% 0; } }
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 325px;
-  height: 142px;
-  gap: 16px;
-  background-color: #000;
-  color: #ffffff;
-  padding: 22px 25px 22px 25px; }
-  footer .logo-image.small-case img {
-    width: 139px;
-    height: 27px;
-    filter: brightness(0) invert(1);
-    font-size: 18px;
-    margin-left: 22px; }
-  footer a {
-    color: #ffffff;
-    font-size: 16px; }
-  footer i {
-    color: #ffffff; }
-  footer .links-section {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    margin-left: 22px; }
-    footer .links-section .fa-solid fa-utensils {
-      width: 11px;
-      height: 13px; }
-    footer .links-section .proposition {
-      display: flex;
-      width: 168px;
-      font-size: 16px;
-      font-family: Roboto;
-      font-weight: 500;
-      font-style: normal;
-      line-height: normal;
-      gap: 17px; }
-    footer .links-section .proposer-un-restaurant {
-      white-space: nowrap; }
-    footer .links-section .partenaire {
-      display: flex;
-      width: 168px;
-      flex-direction: row;
-      font-size: 16px;
-      font-family: Roboto;
-      font-weight: 500;
-      font-style: normal;
-      line-height: normal;
-      gap: 11px; }
-    footer .links-section .fas fa-handshake {
-      width: 11.91px;
-      height: 13px;
-      transform: rotate(60deg); }
-    footer .links-section .mentions-legales {
-      display: flex;
-      width: 130px;
-      height: 20px;
-      flex-direction: column;
-      font-size: 16px;
-      font-family: Roboto;
-      font-weight: 400;
-      font-style: normal;
-      line-height: normal; }
-    footer .links-section .contact {
-      display: flex;
-      width: 130px;
-      height: 20px;
-      flex-direction: column;
-      font-size: 16px;
-      font-family: Roboto;
-      font-weight: 400;
-      font-style: normal;
-      line-height: normal; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+scss/responsive/_responsive.scss:1
+scss/style.scss:3
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: /scss/variables.\A         on line 1 of scss/responsive/_responsive.scss\A         from line 3 of scss/style.scss\A \A 1: \A 2: \A 3: @import '../scss/responsive/_responsive';\A 4: @import '_variables';\A 5: @import 'mixin';\A 6: @import '_index';"; }

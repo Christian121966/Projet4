@@ -1,5 +1,6 @@
-@import '_mixin.scss';
-@import '_variables.scss';
+@import './mixin';
+@import './variables';
+@import '../scss/responsive/responsive';
 
     //styles
     
@@ -11,218 +12,102 @@
         padding-left: 0;
         padding-right: 0;
         flex-direction: column;
-        }
-
-        .visual-hidden {
-            position: absolute;
-            left: -9999px;
-            top: -9999px;
-        }
-        
-        .main-container {
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0 auto;
-            padding: 0;
+    }
+    
+    .main-container {
+        header {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
     
-                header {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-
-                    .logo-image {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #ffffff;
-                        padding: 0;
-                        margin-right: 0px;
-                    }
-                    
-                        & img {
-                            width: 162px;
-                            height: 44px;
-                            font-size: 30px;
-                            font-weight: 400;
-                            font-style: normal;
-                            line-height: normal;
-                            margin-top: 14px;
-                            font-family: shrikhand;
-                        }
-                    }
-                }
-
-                @media screen and (min-width: 767px) {
-                    .main-container {
-                       
-                
-                            header {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: center;
-                                width: 767px;
-            
-                                .logo-image {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    background-color: #ffffff;
-                                    padding: 0;
-                                    margin-right: 0px;
-                                    width: 200px;
-                                    height: 34.20px;
-                                }
-                                
-                                    & img {
-                                        width: 200px;
-                                        height: 34.20px;
-                                        font-size: 30px;
-                                        font-weight: 400;
-                                        font-style: normal;
-                                        line-height: normal;
-                                        margin-top: 14px;
-                                        font-family: shrikhand;
-                                    }
-                                }
-                            }
-                        }                
-                
-                .icone-localisation {
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    gap: 17px;
-                    background-color: #EAEAEA;
-                    margin-top: 20px;
-                    border-color: #EAEAEA;
-                    height: 50px;
-                    width: 100%;
-                    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
-                }
-
-                .fa-solid.fa-location-dot {
-                    margin-top: 15px;
-                    width: 12px;
-                    height: 16px;
-                }
-
-                .siege {
-                    font-size: 16px;
+            .logo-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffffff;
+                padding: 0;
+                margin-right: 0px;
+                width: 200px;
+                height: 34.20px;
+    
+                img {
+                    width: 200px;
+                    height: 34.20px;
+                    font-size: 30px;
+                    font-weight: 400;
                     font-style: normal;
-                    color: #353535;
-                    padding: 0;
-                    margin-top: 15px;
-                    margin-bottom: 0;
-                    font-weight: 500;
-                    font-family: roboto;
-                }
-
-                h2 {
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 24px;
-                    font-weight: 700;
-                    font-family: Roboto;
-                    color: #000000;
-                    padding: 0;
-                    margin-top: 24px;
-                    margin-bottom: 24px;
-                    margin-left: 20px;
-                }
-
-
-                @media screen and (min-width: 767px) {
-
-                    .icone-localisation {
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    gap: 17px;
-                    background-color: #EAEAEA;
-                    margin-top: 20px;
-                    border-color: #EAEAEA;
-                    height: 50px;
-                    width: 767px;
-                    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
+                    line-height: normal;
+                    margin-top: 14px;
+                    font-family: shrikhand;
                 }
             }
+        }
+    }
+    
+    .icone-localisation {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 17px;
+        background-color: #EAEAEA;
+        margin-top: 20px;
+        border-color: #EAEAEA;
+        height: 50px;
+        width: 100%;
+        box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
+    }
     
     main {
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         width: 100%;
-        height: 2240px;
+        height: 2252px;
+        margin-bottom: 66px;
+    }
     
-            section.decouverte {
-                display: flex;
-                text-align: center;
-                padding: 35px 0;
-                width: 100%;
-                height: 287px;
-                background-color: #F6F6F6;
-                align-items: center;
-                flex-direction: column;
-                align-items: center;
-                }
-
-                @media screen and (min-width: 767px) {
-
-                    section.decouverte {
-                        display: flex;
-                        text-align: center;
-                        padding: 35px 0;
-                        width: 100%;
-                        height: 287px;
-                        background-color: #F6F6F6;
-                        align-items: center;
-                        flex-direction: column;
-                        align-items: center;
-                        gap: 18px;
-                        }
-
-                        
-                }
-
-            h1 {
-                color: #000000;
-                font-size: 24px;
-                color: #000000;
-                font-weight: 700;
-                margin-bottom: 15px;
-                line-height: 28px;
-                width: 275px;
-                height: 68px;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                font-family: roboto;
-                flex-direction: column;
-                margin-left: 42px;
-                }
+    section.decouverte {
+        display: flex;
+        text-align: center;
+        padding: 35px 0;
+        width: 100%;
+        height: 287px;
+        background-color: #F6F6F6;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
     
-            h3 {
-                display: flex;
-                text-align: center;
-                color: #353535;
-                font-size: 18px;
-                font-family: roboto;
-                margin-bottom: 20px;
-                font-weight: 300;
-                width: 315px;
-                height: 46px;
-                margin-left: 34px;
-                margin-right: 26px
-                }
+    section.decouverte h1 {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: 28px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        font-family: roboto;
+        margin-left: 15px;
+    }
+    
+    section.decouverte h3 {
+        display: flex;
+        text-align: center;
+        color: #353535;
+        font-size: 18px;
+        font-family: roboto;
+        margin-bottom: 20px;
+        font-weight: 300;
+        height: 46px;
+        margin-left: 34px;
+        margin-right: 26px;
+        align-items: center;
+    }
+        
     
                 .button-explorer {
                     @include button-styles-vierge;
@@ -242,54 +127,6 @@
 
             }
 
-
-            @media screen and (min-width: 767px) {
-                h1 {
-                    color: #000000;
-                    font-size: 24px;
-                    color: #000000;
-                    font-weight: 700;
-                    margin-bottom: 15px;
-                    line-height: 28px;
-                    width: 645px;
-                    height: 47px;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    font-family: roboto;
-                    flex-direction: row;
-                    margin-left: 42px;
-                    }
-        
-                h3 {
-                    display: flex;
-                    text-align: center;
-                    color: #353535;
-                    font-size: 18px;
-                    font-family: roboto;
-                    margin-bottom: 20px;
-                    font-weight: 300;
-                    width: 531px;
-                    height: 46px;
-                    margin-left: 34px;
-                    margin-right: 26px
-                    }
-        
-                    .button-explorer {
-                        @include button-styles-vierge;
-                        width: 218px;
-                        height: 50px;
-                        transition: background 5s;
-                    
-    
-                    &:hover {
-                        $hover-color: mix(#9356DC, white, 20%);
-                        background: linear-gradient(175deg, #9356DC 0%, #FF79DA 50%, $hover-color 100%);
-                        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
-                    }
-    
-                }
-
                 .button-text {
                     font-size: 16px;
                     width: 180.495px;
@@ -304,24 +141,15 @@
                     margin-bottom: 13px;
                     margin-left: 20px;
                 }
-            }
+            
 
 
                 .fonctionnement {
                     display: flex;
                     background-color: #FFF;
                     flex-direction: column;
-                    gap: 15px;
-                }
-                
-            
-                /*@media screen and (min-width: 767px) {
-                    .fonctionnement {
-                        background-color: #FFF;
-                        position: absolute;
-                        flex-direction: row;
-                    }*/
-                    
+                    gap: 18px;
+                    margin-bottom: 68px;
                 }
 
                 a {
@@ -511,6 +339,7 @@
             .restaurants {
                 background-color: $background;
                 width: 100%;
+                height: 1226px;
 
             .restaurants-cards {
                 margin-left: 17px;
@@ -658,7 +487,7 @@
             }
       
     footer {
-                    display: flex;
+                    /*display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: center;
@@ -668,6 +497,18 @@
                     background-color: #000;
                     color: #ffffff;
                     padding: 22px 25px 22px 25px;
+                    overflow: hidden;*/
+                    background-color: #353535;
+                    color: #FFF;
+                    padding: 22px 25px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 16px;
+                    width: 85%;
+
+                    
                     
 
                     .logo-image.small-case {
@@ -691,11 +532,12 @@
                         }
 
                         .links-section {
-                            margin-bottom: 7px;
                             display: flex;
                             flex-direction: column;
                             gap: 7px;
                             margin-left: 22px;
+                            margin-bottom: 22px;
+                            padding-top: 0;
 
                             .fa-solid fa-utensils {
                                 width: 11px;
@@ -711,14 +553,23 @@
                                 font-style: normal;
                                 line-height: normal;
                                 gap: 17px;
-                            }
+                            
 
-                            .proposer-un-restaurant {
+                            a.proposer-un-restaurant {
                                 white-space: nowrap;
+                                margin-top: 0;
+                                margin-left: 0;
                             }
-
+                            
+                            }
 
                             .partenaire {
+                                display: flex;
+                                flex-direction: row;
+                            }
+
+
+                            a.partenariat {
                                 display: flex;
                                 width: 168px;
                                 flex-direction: row;
@@ -728,6 +579,8 @@
                                 font-style: normal;
                                 line-height: normal;
                                 gap: 11px;
+                                margin-top: 0;
+                                margin-left: 10px;
                             }
 
                             .fas fa-handshake {
@@ -736,7 +589,7 @@
                                 transform: rotate(60deg);
                             }
 
-                            .mentions-legales {
+                            .mentions {
                                 display: flex;
                                 width: 130px;
                                 height: 20px;
@@ -746,6 +599,20 @@
                                 font-weight: 400;
                                 font-style: normal;
                                 line-height: normal;
+
+                            a.mentions-legales {
+                                display: flex;
+                                width: 168px;
+                                flex-direction: row;
+                                font-size: 16px;
+                                font-family: Roboto;
+                                font-weight: 500;
+                                font-style: normal;
+                                line-height: normal;
+                                gap: 11px;
+                                margin-top: 0;
+                                margin-left: 0;
+                            }
                             }
 
                             .contact {
@@ -758,6 +625,21 @@
                                 font-weight: 400;
                                 font-style: normal;
                                 line-height: normal;
+                            
+
+                            a.mail {
+                                display: flex;
+                                width: 168px;
+                                flex-direction: row;
+                                font-size: 16px;
+                                font-family: Roboto;
+                                font-weight: 500;
+                                font-style: normal;
+                                line-height: normal;
+                                gap: 11px;
+                                margin-top: 0;
+                                margin-left: 0;                                
+                            }
                             }
                         }            
 
