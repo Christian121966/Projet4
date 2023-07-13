@@ -129,12 +129,37 @@
 
         .fonctionnement {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             background-color: #FFF;
             
         }
 
-        a {
+        .button {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            position: relative;
+            left: 120px;
+        }
+
+        a.fonction {
+            display: flex;
+            flex-direction: column;
+            color: $title-color;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Roboto;
+            /*width: 211px;*/
+            gap: 15px;
+            height: 15.67px;
+            margin-left: 35px;
+            margin-right: 20px;
+            /*margin-top: 7.5px;
+            scroll-behavior: smooth;*/ 
+        }
+
+        /*a {
             display: flex;
             flex-direction: column;
             color: $title-color;
@@ -147,21 +172,21 @@
             margin-left: 40.02px;
             margin-top: 7.5px;
             scroll-behavior: smooth;
-        }
+        }*/
 
         .icone-fonctionnement {
-            width: 322.486px;
-            height: 72.379px;
-            margin-top: 13px;
+            width: 25%;
+            height: 72.38px;
+            /*margin-top: 13px;
             position: relative;
-            margin-bottom: 24.92px;
+            margin-bottom: 24.92px;*/
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             background-color: #F6F6F6;
             border-radius: 20px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         
-            .fonctionnement-number {
+            /*.fonctionnement-number {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -170,7 +195,7 @@
                 height: 24px;
                 border-radius: 50%;
                 background-color: #9356DC;
-                color: #FFFFFF;
+                color: #796464;
                 font-size: 14px;
                 font-family: Roboto;
                 font-weight: 500;
@@ -178,14 +203,14 @@
                 left: -10px;
                 top: 20px;
                 cursor: pointer;
-              }
+              }*/
               
         .fas.fa-mobile-screen-button {
-            width: 13.19px;
+            /*width: 13.19px;
             height: 19.903px;
-            margin-top: 24.5px;
+            margin-top: 24.5px;*/
             color: #7E7E7E;
-            
+            margin-left: 35px;
         }
 
         .fas.fa-mobile-screen-button:hover {
@@ -195,10 +220,11 @@
         }
 
         .fas.fa-list-ul {
-            width: 16px;
+            /*width: 16px;
             height: 15.92px;
-            margin-top: 24.5px;
+            margin-top: 24.5px;*/
             color: #7E7E7E;
+            margin-left: 35px;
         }
 
         .fas.fa-list-ul:hover {
@@ -208,10 +234,11 @@
         }
 
         .fas.fa-store {
-            width: 18px;
+            /*width: 18px;
             height: 17.91px;
-            margin-top: 24.5px;
+            margin-top: 24.5px;*/
             color: #7E7E7E;
+            margin-left: 35px;
         }
 
         .fas.fa-store:hover {
