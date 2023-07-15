@@ -128,19 +128,16 @@
         }
 
         .fonctionnement {
-            display: flex;
             flex-direction: row;
-            background-color: #FFF;
-            
         }
+@media screen and (min-width: 767px) {
 
         .button {
             display: flex;
             flex-direction: row;
-            width: 100%;
-            position: relative;
-            left: 120px;
+            left: initial;
         }
+    }
 
         a.fonction {
             display: flex;
@@ -150,16 +147,16 @@
             font-size: 14px;
             font-weight: 500;
             font-family: Roboto;
-            /*width: 211px;*/
-            gap: 15px;
+            width: 211px;
+            /*gap: 15px;
             height: 15.67px;
             margin-left: 35px;
             margin-right: 20px;
             /*margin-top: 7.5px;
             scroll-behavior: smooth;*/ 
-        }
+        
 
-        /*a {
+        a {
             display: flex;
             flex-direction: column;
             color: $title-color;
@@ -172,9 +169,9 @@
             margin-left: 40.02px;
             margin-top: 7.5px;
             scroll-behavior: smooth;
-        }*/
+        }
 
-        .icone-fonctionnement {
+        /*.icone-fonctionnement {
             width: 25%;
             height: 72.38px;
             /*margin-top: 13px;
@@ -186,7 +183,7 @@
             border-radius: 20px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         
-            /*.fonctionnement-number {
+            .fonctionnement-number {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -203,9 +200,9 @@
                 left: -10px;
                 top: 20px;
                 cursor: pointer;
-              }*/
+              }
               
-        .fas.fa-mobile-screen-button {
+        /*.fas.fa-mobile-screen-button {
             /*width: 13.19px;
             height: 19.903px;
             margin-top: 24.5px;*/
@@ -247,4 +244,4 @@
             font-weight: 900;
         }
     }
-}
+
