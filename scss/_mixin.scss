@@ -37,6 +37,12 @@
     }
 }
 
+@mixin desktop-to {
+    @media (376 <= width <=767px) {
+
+    }
+}
+
 @mixin mobile-only {
     @media screen and (max-width: 375px) {
         @content;

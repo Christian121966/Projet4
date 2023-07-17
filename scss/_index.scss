@@ -1,24 +1,26 @@
 
 @import './mixin';
 @import './variables';
-/*@import './_responsive';*/
+@import './_responsive';
 
     //styles
     
     body {
+        max-width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: $button-text-color;
         margin: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
         flex-direction: column;
+        box-sizing: border-box;
         }
         
         .main-container {
+            max-width: 100%;
             width: 100%;
-            box-sizing: border-box;
-            margin: 0 auto;
+            margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
@@ -41,28 +43,26 @@
                     }
                     
                         & img {
-                            width: 162px;
-                            height: 44px;
-                            font-size: 30px;
-                            font-weight: 400;
-                            font-style: normal;
-                            line-height: normal;
+                            display: flex;
+                            width: 197px;
+                            height: 36px;
+                            padding: 0px 19px 0px 16px;
+                            justify-content: center;
+                            align-items: center;
                             margin-top: 14px;
-                            font-family: $police1;
                         }
                     }
-                }
 
                 .icone-localisation {
                     display: flex;
+                    width: 375px;
+                    height: 50px;
                     justify-content: center;
                     text-align: center;
                     gap: 17px;
                     background-color: #EAEAEA;
                     margin-top: 20px;
                     border-color: #EAEAEA;
-                    height: 50px;
-                    width: 100%;
                     box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
                 }
 
@@ -97,11 +97,12 @@
                 }
     main {
         padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 375px;
         height: 2240px;
     
             section.decouverte {
@@ -113,10 +114,10 @@
                 background-color: #F6F6F6;
                 align-items: center;
                 flex-direction: column;
-                }
 
                 h1 {
-                    font-size: 24px;
+                    font-size: 22px;
+                    font-family: $police2;
                     font-weight: 700;
                     display: flex;
                     flex-direction: column;
@@ -124,6 +125,9 @@
                     align-items: center;
                     width: 275px;
                     height: 68px;
+                    text-align: center;
+                    line-height: normal;
+                    flex-shrink: 0;
                 }
 
                 h3 {
@@ -133,21 +137,52 @@
                     flex-direction: column;
                     width: 315px;
                     height: 46px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    font-family: $police2;
                 }
-            }
-                .fonctionnement {
-                    display: flex;
-                    background-color: #FFF;
-                    position: absolute;
+
+                .button-explorer {
+                    width: 218px;
+                    height: 50px;
+                    border-radius: 25px;
+                    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+                    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+                    flex-shrink: 0;
+                    margin-top: 27px;
+
+                    .button-text {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 16px;
+                        font-family: $police2;
+                        font-weight: 500;
+                        line-height: normal;
+                        color: #FFF;
+                        margin-top: 15px;
                     }
+                }
+
+            }
+        }
+
+
+                .Fonctionnement {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    background-color: #FFF;
+                    width: 100%;
 
                 .button {
+                    display: flex;
                     flex-direction: column;
-                    left: 0;
+                    transform: translate(50px);
+                    margin-right: 0;
                 }
+            }
             
-            
-
                 a {
                     display: flex;
                     flex-direction: column;
@@ -164,7 +199,7 @@
                 }
     
                 .icone-fonctionnement {
-                    width: 322.486px;
+                    width: 75%;
                     height: 72.379px;
                     margin-top: 13px;
                     position: relative;
@@ -201,7 +236,7 @@
                     height: 19.903px;
                     margin-top: 24.5px;
                     color: #7E7E7E;
-                    
+                    transform: translate(20px);
                 }
 
                 .fas.fa-mobile-screen-button:hover {
@@ -216,6 +251,7 @@
                     height: 15.92px;
                     margin-top: 24.5px;
                     color: #7E7E7E;
+                    transform: translate(20px);
                 }
 
                 .fas.fa-list-ul:hover {
@@ -229,6 +265,7 @@
                     height: 17.91px;
                     margin-top: 24.5px;
                     color: #7E7E7E;
+                    transform: translate(20px);
                 }
 
                 .fas.fa-store:hover {
@@ -237,6 +274,9 @@
                     font-weight: 900;
                 }
         }
+
+
+
             .restaurants {
                 background-color: $background;
                 width: 100%;
@@ -278,8 +318,9 @@
                     height: 231px;
                     margin-top: -8px;
                     border-radius: 15px 15px 0px 0px;
-                    margin-left: -37px;
-                    margin-right: 3px;  
+                    transform: translateX(-37px);
+                    
+ 
                 }
 
                 .card-title {
@@ -388,15 +429,158 @@
             }
       
     footer {
+        /*background-color: #353535;
+        color: #FFF;
+        padding: 22px 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        width: 85%;
+
+        
+        
+
+        .logo-image.small-case {
+            img {
+                width: 139px;
+                height: 27px;
+                filter: brightness(0) invert(1);
+                font-size: 18px;
+                margin-left: 22px;
+            }
+
+        }
+
+            a {
+                color: #ffffff;
+                font-size: 16px;
+            }
+
+            i {
+                color: #ffffff;
+            }
+
+            .links-section {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                margin-left: 22px;
+                margin-bottom: 22px;
+                padding-top: 0;
+
+                .fa-solid fa-utensils {
+                    width: 11px;
+                    height: 13px;
+                }
+
+                .proposition {
+                    display: flex;
+                    width: 168px;
+                    font-size: 16px;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: normal;
+                    gap: 17px;
+                
+
+                a.proposer-un-restaurant {
+                    white-space: nowrap;
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+                
+                }
+
+                .partenaire {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+
+                a.partenariat {
+                    display: flex;
+                    width: 168px;
+                    flex-direction: row;
+                    font-size: 16px;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: normal;
+                    gap: 11px;
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
+
+                .fas fa-handshake {
+                    width: 11.91px;
+                    height: 13px;
+                    transform: rotate(60deg);
+                }
+
+                .mentions {
+                    display: flex;
+                    width: 130px;
+                    height: 20px;
+                    flex-direction: column;
+                    font-size: 16px;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: normal;
+
+                a.mentions-legales {
+                    display: flex;
+                    width: 168px;
+                    flex-direction: row;
+                    font-size: 16px;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: normal;
+                    gap: 11px;
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+                }
+
+                .contact {
+                    display: flex;
+                    width: 130px;
+                    height: 20px;
+                    flex-direction: column;
+                    font-size: 16px;
+                    font-family: Roboto;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: normal;
+                
+
+                a.mail {
+                    display: flex;
+                    width: 168px;
+                    flex-direction: row;
+                    font-size: 16px;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: normal;
+                    gap: 11px;
+                    margin-top: 0;
+                    margin-left: 0;*/  
+        
+
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    justify-content: center;
+                    justify-content: flex-start;
                     width: 325px;
                     height: 142px;
                     gap: 16px;
-                    background-color: #000;
-                    color: #ffffff;
+                    color: #FFF;
+                    background-color: #353535;
                     padding: 22px 25px 22px 25px;
                     
 
@@ -406,10 +590,9 @@
                             height: 27px;
                             filter: brightness(0) invert(1);
                             font-size: 18px;
-                            margin-left: 22px;
+                            margin-top: 20px;
+                            margin-left: 25px;
                         }
-
-                    }
 
                         a {
                             color: #ffffff;
@@ -419,17 +602,22 @@
                         i {
                             color: #ffffff;
                         }
+                    }
 
                         .links-section {
-                            margin-bottom: 7px;
+                            margin-bottom: 10px;
                             display: flex;
                             flex-direction: column;
                             gap: 7px;
-                            margin-left: 22px;
+                            
 
-                            .fa-solid fa-utensils {
+                            .fa-solid .fa-ustensils {
+                                display: flex;
                                 width: 11px;
                                 height: 13px;
+                                font-weight: 100;
+                                /*filter: brightness(0) invert(1);*/
+                                color: #FFF;
                             }
 
                             .proposition {
@@ -440,11 +628,18 @@
                                 font-weight: 500;
                                 font-style: normal;
                                 line-height: normal;
+                                margin-left: 20px;
                                 gap: 17px;
                             }
 
                             .proposer-un-restaurant {
                                 white-space: nowrap;
+                                margin-left: 0;
+                            }
+
+                            a.proposer-un-restaurant {
+                                color: #FFF;
+                                margin-top: 0;
                             }
 
 
@@ -460,39 +655,56 @@
                                 gap: 11px;
                             }
 
-                            .fas fa-handshake {
+                            .fas .fa-handshake {
                                 width: 11.91px;
                                 height: 13px;
                                 transform: rotate(60deg);
                             }
 
-                            .mentions-legales {
+                            a.partenariat {
                                 display: flex;
+                                flex-direction: row;
+                                margin-left: 0;
+                                margin-top: 0;
+                                color: #FFF;
+                            }
+
+                            .mentions-legales {
                                 width: 130px;
                                 height: 20px;
-                                flex-direction: column;
                                 font-size: 16px;
                                 font-family: Roboto;
                                 font-weight: 400;
                                 font-style: normal;
                                 line-height: normal;
+                            }
+
+                            a.mentions-legales {
+                                color: #FFF;
+                                margin-top: 0;
+                                margin-left: 30px;
                             }
 
                             .contact {
-                                display: flex;
                                 width: 130px;
                                 height: 20px;
-                                flex-direction: column;
                                 font-size: 16px;
                                 font-family: Roboto;
                                 font-weight: 400;
                                 font-style: normal;
                                 line-height: normal;
                             }
-                        }            
 
+                            a.contact {
+                                color: #FFF;
+                                margin-top: 0;
+                                margin-left: 30px;
+                            }
+                        }            
             }        
-            
+    
+
+        }   
 
 
 
