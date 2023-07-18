@@ -9,6 +9,8 @@
 }
 
 .main-container {
+  height: 1650px;
+  padding: 0;
 
 header {
   width: 767px;
@@ -61,17 +63,18 @@ main {
   .Fonctionnement {
     display: flex;
     flex-direction: column;
-    height: 440px;
+    height: 250px;
     align-items: flex-start;
     background: #fff;
 
     h2 {
-      transform: translate(30px);
+      transform: translate(25px);
     }
 
     .button {
       flex-direction: row;
       gap: 20px;
+      margin-left: -10px;
       }
 
       .icone-fonctionnement {
@@ -98,6 +101,31 @@ main {
       }
   }
 
+  .restaurants {
+    height: 780px;
+
+    h2#restaurants {
+      transform: translate(20px);
+    }
+
+    .card1 {
+      transform: translate(20px);
+    }
+
+    .card2 {
+      transform: translate(384px, -335px);
+    }
+
+    .card3 {
+      transform: translate(18px, -330px);
+    }
+
+    .card4 {
+      transform: translate(389px, -664px);
+    }
+
+  }
+
   
 
 
@@ -106,7 +134,8 @@ main {
 
 
 footer {
-  width: 767px;
+  width: 100%;
+  padding: 0;
 }
 
 }
