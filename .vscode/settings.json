@@ -1,12 +1,15 @@
 {
-    "liveServer.settings.port": 5501,
-    "liveSassCompile.settings.formats":[
-        // This is Default.
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/assets/css"
-        },
-        
-    ]
+  "liveServer.settings.port": 5501,
+  "liveSassCompile.settings.formats": [
+    // This is Default.
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/assets/css"
+    }
+  ],
+  "editor.defaultFormatter": null,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

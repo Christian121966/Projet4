@@ -1,7 +1,5 @@
 
-@import './mixin';
-@import './variables';
-@import './_responsive';
+
 
     //styles
     
@@ -102,8 +100,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 375px;
-        height: 2240px;
     
             section.decouverte {
                 display: flex;
@@ -150,6 +146,7 @@
                     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
                     flex-shrink: 0;
                     margin-top: 27px;
+                    cursor: pointer;
 
                     .button-text {
                         display: flex;
@@ -209,6 +206,7 @@
                     background-color: #F6F6F6;
                     border-radius: 20px;
                     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                    cursor: pointer;
                 
                     .fonctionnement-number {
                         display: flex;
@@ -280,7 +278,6 @@
             .restaurants {
                 background-color: $background;
                 width: 100%;
-                height: 1583.64px;
 
             .restaurants-cards {
                 margin-left: 17px;
@@ -294,7 +291,7 @@
     
                 .card1 {
                     width: 340px;
-                    height: 308px;
+                    height: 270px;
                     border-radius: 15px;
                     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
                     background-color: #ffffff;
@@ -302,7 +299,7 @@
 
                 .card2 {
                     width: 340px;
-                    height: 308px;
+                    height: 270px;
                     border-radius: 15px;
                     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
                     background-color: #ffffff;
@@ -310,7 +307,7 @@
 
                 .card3 {
                     width: 340px;
-                    height: 308px;
+                    height: 270px;
                     border-radius: 15px;
                     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
                     background-color: #ffffff;
@@ -318,7 +315,7 @@
 
                 .card4 {
                     width: 340px;
-                    height: 308px;
+                    height: 270px;
                     border-radius: 15px;
                     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
                     background-color: #ffffff;
@@ -341,11 +338,11 @@
 
     
                 img {
-                    width: 334px;
-                    height: 231px;
-                    margin-top: -8px;
+                    width: 340px;
+                    height: 170px;
+                    margin-top: 1px;
                     border-radius: 15px 15px 0px 0px;
-                    transform: translateX(-37px);
+                    transform: translateX(-40px);
                     
  
                 }
@@ -495,12 +492,12 @@
                             gap: 7px;
                             
 
-                            .fa-solid .fa-ustensils {
+                            .fa-regular.fa-utensils {
                                 display: flex;
-                                width: 11px;
+                                /*width: 11px;*/
                                 height: 13px;
-                                font-weight: 100;
-                                /*filter: brightness(0) invert(1);*/
+                                font-weight: 900;
+                                
                                 color: #FFF;
                             }
 
@@ -539,10 +536,10 @@
                                 gap: 11px;
                             }
 
-                            .fas .fa-handshake {
+                            .fas.fa-handshake {
                                 width: 11.91px;
                                 height: 13px;
-                                transform: rotate(60deg);
+                                transform: rotate(120deg);
                             }
 
                             a.partenariat {
@@ -589,6 +586,7 @@
     
 
         }   
+
 
 
 
