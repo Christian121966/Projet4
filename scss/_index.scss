@@ -287,6 +287,7 @@
                 align-items: center;
                 width: 340px;
                 gap: 18px;
+                padding-bottom: 70px;
             }
     
                 .card1 {
@@ -458,8 +459,8 @@
                     align-items: flex-start;
                     justify-content: flex-start;
                     width: 325px;
-                    height: 142px;
-                    gap: 16px;
+                    height: 193px;
+                    gap: 20px;
                     color: #FFF;
                     background-color: #353535;
                     padding: 22px 25px 22px 25px;
@@ -471,7 +472,7 @@
                             height: 27px;
                             filter: brightness(0) invert(1);
                             font-size: 18px;
-                            margin-top: 20px;
+                            margin-top: 10px;
                             margin-left: 25px;
                         }
 
@@ -489,7 +490,7 @@
                             margin-bottom: 10px;
                             display: flex;
                             flex-direction: column;
-                            gap: 7px;
+                            gap: 16px;
                             
 
                             .fa-regular.fa-utensils {
@@ -534,6 +535,7 @@
                                 font-style: normal;
                                 line-height: normal;
                                 gap: 11px;
+                                margin-left: 20px;
                             }
 
                             .fas.fa-handshake {
@@ -563,7 +565,7 @@
                             a.mentions-legales {
                                 color: #FFF;
                                 margin-top: 0;
-                                margin-left: 30px;
+                                margin-left: 20px;
                             }
 
                             .contact {
@@ -579,7 +581,7 @@
                             a.contact {
                                 color: #FFF;
                                 margin-top: 0;
-                                margin-left: 30px;
+                                margin-left: 20px;
                             }
                         }            
             }        
