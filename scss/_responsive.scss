@@ -156,6 +156,10 @@ footer {
     position: relative;
     left: 585px;
     top: 50px;
+
+    @media only screen and (min-width: 1024px) {
+      left: 825px;
+    }
   }
 
   .links-section {
@@ -168,6 +172,11 @@ footer {
     transform: translate(-5px, 5px);
 
 
+    @media only screen and (min-width: 1024px) {
+      transform: translate(150px, 5px);
+    }
+
+
     .proposition {
       margin-left: 25px;
     }
@@ -175,7 +184,6 @@ footer {
 
     .fa-regular.fa-utensils {
       display: flex;
-      /*width: 11px;*/
       height: 13px;
       font-weight: 900;
       
