@@ -511,6 +511,9 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 body .main-container {
   display: flex;
@@ -565,7 +568,8 @@ body .main-container main .carte-palette-du-gout {
   width: 100%;
   position: relative;
   border-radius: 40px 40px 0 0;
-  margin-top: -10px;
+  margin-top: -55px;
+  background: #f7f7f7;
 }
 body .main-container main .carte-palette-du-gout .logo-menu-container {
   position: relative;
@@ -588,15 +592,229 @@ body .main-container main .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   font-family: "Roboto", sans-serif;
 }
-body .main-container main .menu p {
+body .main-container main .menu .custom-underline {
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
   color: #000;
+  position: relative;
+  margin-left: 15px;
+}
+body .main-container main .menu .custom-underline::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  bottom: -7px;
+  left: 0;
+  z-index: -1;
+}
+body .main-container main .menu .custom-underline::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  bottom: -7px;
+  left: 0;
+}
+body .main-container main .menu .menu-entrees {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+body .main-container main .menu .entrees {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  width: 349px;
+  height: 69px;
+  align-items: flex-start;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-left: 12px;
+}
+body .main-container main .menu .entrees h2 {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 21px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body .main-container main .menu .entrees h3 {
+  height: 19px;
+  flex-shrink: 0;
+  align-self: stretch;
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 0;
+  transform: translate(10px, -25px);
+}
+body .main-container main .menu .entrees .price {
+  position: relative;
+  left: 300px;
+  top: -65px;
+  font-weight: bold;
+}
+body .main-container main .menu .menu-plats {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+body .main-container main .menu .menu-plats .plats {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  width: 349px;
+  height: 69px;
+  align-items: flex-start;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-left: 12px;
+}
+body .main-container main .menu .menu-plats .plats h2 {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 21px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body .main-container main .menu .menu-plats .plats h3 {
+  height: 19px;
+  flex-shrink: 0;
+  align-self: stretch;
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 0;
+  transform: translate(10px, -25px);
+}
+body .main-container main .menu .menu-plats .plats .price {
+  position: relative;
+  left: 300px;
+  top: -65px;
+  font-weight: bold;
+}
+body .main-container main .menu .menu-desserts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+body .main-container main .menu .menu-desserts .desserts {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  width: 349px;
+  height: 69px;
+  align-items: flex-start;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-left: 12px;
+}
+body .main-container main .menu .menu-desserts .desserts h2 {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 21px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+body .main-container main .menu .menu-desserts .desserts h3 {
+  height: 19px;
+  flex-shrink: 0;
+  align-self: stretch;
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 0;
+  transform: translate(10px, -25px);
+}
+body .main-container main .menu .menu-desserts .desserts .price {
+  position: relative;
+  left: 300px;
+  top: -65px;
+  font-weight: bold;
+}
+body .main-container main .menu .commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 0px;
+}
+body .main-container main .menu .commander .custom-button.commander {
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  font-size: 16px;
+  transition: 300ms, ease-out;
+}
+body .main-container main .menu .commander .custom-button.commander:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (min-width: 768px) {
@@ -690,24 +908,16 @@ body .main-container main .menu p {
   .main-container main .Fonctionnement .fas.fa-mobile-screen-button {
     transform: translate(30px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .Fonctionnement .fas.fa-list-ul {
     transform: translate(30px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .Fonctionnement .fas.fa-store {
     transform: translate(30px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .Fonctionnement a.fonction {
     font-size: 12px;
     margin-top: 12px;
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .restaurants {
     height: 725px;
   }
@@ -721,28 +931,18 @@ body .main-container main .menu p {
   .main-container main .restaurants h2#restaurants {
     transform: translate(20px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .restaurants .card1 {
     transform: translate(20px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .restaurants .card2 {
     transform: translate(384px, -295px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .restaurants .card3 {
     transform: translate(18px, -300px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container main .restaurants .card4 {
     transform: translate(389px, -595px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container footer {
     width: 100%;
     padding: 30px 0px;
@@ -781,33 +981,23 @@ body .main-container main .menu p {
   .main-container footer .links-section .proposition {
     margin-left: 25px;
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container footer .links-section .fa-regular.fa-utensils {
     display: flex;
     height: 13px;
     font-weight: 900;
     color: #FFF;
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container footer .links-section .partenaire {
     margin-left: 33px;
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container footer .links-section .fas.fa-handshake {
     width: 11.91px;
     height: 13px;
     transform: rotate(120deg);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container footer .links-section .mentions {
     transform: translate(-20px, 1px);
   }
-}
-@media only screen and (min-width: 768px) {
   .main-container footer .links-section .contact {
     transform: translate(-25px, 1px);
   }
