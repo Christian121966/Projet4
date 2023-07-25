@@ -876,4 +876,35 @@ body .main-container main .menu .commander .custom-button.commander:hover {
     margin: 0;
     transform: translate(0px, -5px);
   }
+}
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .main-container footer .logo-image.small-case {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 760px;
+    top: 35px;
+    width: 138px;
+    height: 27px;
+  }
+  .main-container footer .links-section {
+    transform: translate(0px, -5px);
+  }
+  .main-container footer .links-section .contact {
+    width: 130px;
+    height: 20px;
+    transform: translate(127px, 0px);
+  }
+  .main-container footer .links-section .mentions {
+    width: 130px;
+    height: 20px;
+    transform: translate(126px, 0px);
+  }
+  .main-container footer .links-section .partenaire {
+    width: 168px;
+    transform: translate(127px, 0px);
+  }
+  .main-container footer .links-section .proposition {
+    transform: translate(127px, 0px);
+  }
 }/*# sourceMappingURL=style.css.map */

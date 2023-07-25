@@ -184,6 +184,46 @@ footer {
     margin: 0;
     transform: translate(0px, -5px);
 }
+
+@media only screen and (min-width: 1024px) {
+  .logo-image.small-case {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 760px;
+    top: 35px;
+    width: 138px;
+    height: 27px;
+  }
+
+  .links-section {
+    transform: translate(0px, -5px);
+
+
+    .contact {
+      width: 130px;
+      height: 20px;
+      transform: translate(127px, 0px);
+    }
+
+    .mentions {
+      width: 130px;
+      height: 20px;
+      transform: translate(126px, 0px);
+    }
+
+    .partenaire {
+      width: 168px;
+      transform: translate(127px, 0px);
+    }
+
+    .proposition {
+      transform: translate(127px, 0px);
+    }
+  }
+}
+
+
 }
 }
 }
