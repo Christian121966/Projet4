@@ -7,14 +7,6 @@ body {
     justify-content: center;
 
 
-    .main-container {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-
         header {
             display: flex;
             flex-direction: column;
@@ -26,28 +18,43 @@ body {
                         text-decoration: none;
                         color: #000000;
                         position: absolute;
-                        top: 25px;
-                        left: -20px;
+                        top: 14px;
+                        left: 17px;
                         font-size: 19px;
                         font-weight: 900;
+                        width: 30px;
+                        height: 30px;
                     }
 
                     .logo-image {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        padding: 0;
+                        padding: 14px 0px 13px 17px;
                         margin-right: 0px;
+                        width: 162px;
+                        height: 44px;
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 400;
+                        font-family: "Shrikhand",cursive;
+                        /*position: absolute;
+                        margin: 0;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-40%);
+                        
+                        */
+                        }
                     }
-                }
 
-                main {
+                /*main {
                     padding: 0;
                     margin: 0;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: #f7f7f7;
+                    background-color: #f7f7f7;*/
 
                     .image-palette-du-gout {
                         height: 275px;
@@ -68,6 +75,7 @@ body {
                     border-radius: 40px 40px 0 0;
                     margin-top: -55px;
                     background: #f7f7f7;
+                    box-sizing: border-box;
 
                     .logo-menu-container {
                         position: relative;
@@ -79,12 +87,44 @@ body {
                         margin-left: 15px;
 
                         .icone-coeur {
-                            transform: translate(60px);
-                            right: 20px;
-                            top: 4px;
+                            display: flex;
+                            position: relative;
+                            right: -18px;
+                            top: 8px;
+                            }
+
+                        .far.fa-heart {
+                            display: flex;
+                            position: relative;
+                            right: -28px;
+                        }
+
+                        .fas.fa-heart {
+                            color: transparent;
+                            background: linear-gradient(360deg, #FF79DA -20%, #9356DC 123%);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            opacity: 0;
+                            cursor: pointer;
+                            transition: all 500ms;
+                        }
+
+                        .fas.fa-heart:hover {
+                            opacity: 1;
+                            animation: fillheart 2s;
+                        }
+            
+                        @keyframes fillheart {
+                            0% {
+                                background-position: 0 0;
+                            }
+                            100% {
+                                background-position: 100% 0;
+                            }
                         }
                     }
                 }
+            }
 
                 .menu {
                     width: 100%;
@@ -174,7 +214,7 @@ body {
                             font-style: normal;
                             font-weight: 300;
                             line-height: normal;
-                            margin-top: 0;
+                            margin-top: 5px;
                             transform: translate(10px, -25px);
                         }
 
@@ -236,7 +276,7 @@ body {
                                 font-style: normal;
                                 font-weight: 300;
                                 line-height: normal;
-                                margin-top: 0;
+                                margin-top: 5px;
                                 transform: translate(10px, -25px);
                             }
     
@@ -298,7 +338,7 @@ body {
                                 font-style: normal;
                                 font-weight: 300;
                                 line-height: normal;
-                                margin-top: 0;
+                                margin-top: 5px;
                                 transform: translate(10px, -25px);
                             }
     
@@ -335,7 +375,7 @@ body {
                     }
                 }
             }
-        }
-    }
-}    
+        
     
+   
+    /*}*/

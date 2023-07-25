@@ -417,63 +417,71 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*main {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f7f7f7;*/
 }
-body .main-container {
+body header {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-body .main-container header {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body .main-container header a {
+body header a {
   text-decoration: none;
   color: #000000;
   position: absolute;
-  top: 25px;
-  left: -20px;
+  top: 14px;
+  left: 17px;
   font-size: 19px;
   font-weight: 900;
+  width: 30px;
+  height: 30px;
 }
-body .main-container header .logo-image {
+body header .logo-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 14px 0px 13px 17px;
   margin-right: 0px;
-}
-body .main-container main {
-  padding: 0;
+  width: 162px;
+  height: 44px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Shrikhand", cursive;
+  /*position: absolute;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f7f7f7;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+
+  */
 }
-body .main-container main .image-palette-du-gout {
+body .image-palette-du-gout {
   height: 275px;
   display: block;
 }
-body .main-container main .image-palette-du-gout img {
+body .image-palette-du-gout img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
 }
-body .main-container main .carte-palette-du-gout {
+body .carte-palette-du-gout {
   width: 100%;
   position: relative;
   border-radius: 40px 40px 0 0;
   margin-top: -55px;
   background: #f7f7f7;
+  box-sizing: border-box;
 }
-body .main-container main .carte-palette-du-gout .logo-menu-container {
+body .carte-palette-du-gout .logo-menu-container {
   position: relative;
   display: flex;
   font-family: "shrikhand", cursive;
@@ -484,19 +492,47 @@ body .main-container main .carte-palette-du-gout .logo-menu-container {
   margin-top: 32px;
   margin-left: 15px;
 }
-body .main-container main .carte-palette-du-gout .logo-menu-container .icone-coeur {
-  transform: translate(60px);
-  right: 20px;
-  top: 4px;
+body .carte-palette-du-gout .logo-menu-container .icone-coeur {
+  display: flex;
+  position: relative;
+  right: -18px;
+  top: 8px;
 }
-body .main-container main .menu {
+body .carte-palette-du-gout .logo-menu-container .far.fa-heart {
+  display: flex;
+  position: relative;
+  right: -28px;
+}
+body .carte-palette-du-gout .logo-menu-container .fas.fa-heart {
+  color: transparent;
+  background: linear-gradient(360deg, #FF79DA -20%, #9356DC 123%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 500ms;
+}
+body .carte-palette-du-gout .logo-menu-container .fas.fa-heart:hover {
+  opacity: 1;
+  animation: fillheart 2s;
+}
+@keyframes fillheart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.menu {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: "Roboto", sans-serif;
 }
-body .main-container main .menu .custom-underline {
+.menu .custom-underline {
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
@@ -505,7 +541,7 @@ body .main-container main .menu .custom-underline {
   position: relative;
   margin-left: 15px;
 }
-body .main-container main .menu .custom-underline::before {
+.menu .custom-underline::before {
   content: "";
   position: absolute;
   width: 40px;
@@ -514,7 +550,7 @@ body .main-container main .menu .custom-underline::before {
   left: 0;
   z-index: -1;
 }
-body .main-container main .menu .custom-underline::after {
+.menu .custom-underline::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -523,14 +559,14 @@ body .main-container main .menu .custom-underline::after {
   bottom: -7px;
   left: 0;
 }
-body .main-container main .menu .menu-entrees {
+.menu .menu-entrees {
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
-body .main-container main .menu .entrees {
+.menu .entrees {
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -543,7 +579,7 @@ body .main-container main .menu .entrees {
   border-radius: 15px;
   margin-left: 12px;
 }
-body .main-container main .menu .entrees h2 {
+.menu .entrees h2 {
   overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
@@ -559,7 +595,7 @@ body .main-container main .menu .entrees h2 {
   margin-top: 10px;
   margin-left: 10px;
 }
-body .main-container main .menu .entrees h3 {
+.menu .entrees h3 {
   height: 19px;
   flex-shrink: 0;
   align-self: stretch;
@@ -572,23 +608,23 @@ body .main-container main .menu .entrees h3 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 0;
+  margin-top: 5px;
   transform: translate(10px, -25px);
 }
-body .main-container main .menu .entrees .price {
+.menu .entrees .price {
   position: relative;
   left: 300px;
   top: -65px;
   font-weight: bold;
 }
-body .main-container main .menu .menu-plats {
+.menu .menu-plats {
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
-body .main-container main .menu .menu-plats .plats {
+.menu .menu-plats .plats {
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -601,7 +637,7 @@ body .main-container main .menu .menu-plats .plats {
   border-radius: 15px;
   margin-left: 12px;
 }
-body .main-container main .menu .menu-plats .plats h2 {
+.menu .menu-plats .plats h2 {
   overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
@@ -617,7 +653,7 @@ body .main-container main .menu .menu-plats .plats h2 {
   margin-top: 10px;
   margin-left: 10px;
 }
-body .main-container main .menu .menu-plats .plats h3 {
+.menu .menu-plats .plats h3 {
   height: 19px;
   flex-shrink: 0;
   align-self: stretch;
@@ -630,23 +666,23 @@ body .main-container main .menu .menu-plats .plats h3 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 0;
+  margin-top: 5px;
   transform: translate(10px, -25px);
 }
-body .main-container main .menu .menu-plats .plats .price {
+.menu .menu-plats .plats .price {
   position: relative;
   left: 300px;
   top: -65px;
   font-weight: bold;
 }
-body .main-container main .menu .menu-desserts {
+.menu .menu-desserts {
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
-body .main-container main .menu .menu-desserts .desserts {
+.menu .menu-desserts .desserts {
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -659,7 +695,7 @@ body .main-container main .menu .menu-desserts .desserts {
   border-radius: 15px;
   margin-left: 12px;
 }
-body .main-container main .menu .menu-desserts .desserts h2 {
+.menu .menu-desserts .desserts h2 {
   overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
@@ -675,7 +711,7 @@ body .main-container main .menu .menu-desserts .desserts h2 {
   margin-top: 10px;
   margin-left: 10px;
 }
-body .main-container main .menu .menu-desserts .desserts h3 {
+.menu .menu-desserts .desserts h3 {
   height: 19px;
   flex-shrink: 0;
   align-self: stretch;
@@ -688,23 +724,23 @@ body .main-container main .menu .menu-desserts .desserts h3 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 0;
+  margin-top: 5px;
   transform: translate(10px, -25px);
 }
-body .main-container main .menu .menu-desserts .desserts .price {
+.menu .menu-desserts .desserts .price {
   position: relative;
   left: 300px;
   top: -65px;
   font-weight: bold;
 }
-body .main-container main .menu .commander {
+.menu .commander {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
   margin-left: 0px;
 }
-body .main-container main .menu .commander .custom-button.commander {
+.menu .commander .custom-button.commander {
   width: 186px;
   height: 50px;
   border-radius: 25px;
@@ -715,10 +751,11 @@ body .main-container main .menu .commander .custom-button.commander {
   font-size: 16px;
   transition: 300ms, ease-out;
 }
-body .main-container main .menu .commander .custom-button.commander:hover {
+.menu .commander .custom-button.commander:hover {
   transform: scale(1.2);
 }
 
+/*}*/
 @media only screen and (min-width: 768px) {
   body {
     display: flex;
