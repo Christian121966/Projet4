@@ -219,6 +219,10 @@
                     cursor: pointer;
                     transition: transform 0.3s ease-out;
 
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
                 
                     .fonctionnement-number {
                         display: flex;
@@ -284,9 +288,8 @@
                     cursor: pointer;
                     font-weight: 900;
                 }
-        }
-
-
+            }
+            
         
             .restaurants {
                 background-color: $background;
@@ -378,10 +381,7 @@
                         font-size: 14px;
                         font-weight: 500;
                     }
-                }
-
-                
-            
+                } 
             }
 
             .icone-coeur {

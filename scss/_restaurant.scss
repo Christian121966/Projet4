@@ -1,10 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+
 body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    /*display: flex;
+    width: 100%;
+    max-width: 375px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;*/
+    justify-content: center;
+    align-items: center;
+    
 
 
         header {
@@ -16,12 +27,15 @@ body {
             a {
                 text-decoration: none;
                 color: inherit;
+                position: absolute;
+                top: 40%;
+                left: -175px;
+                font-size: 19px;
 
                 .fas.fa-arrow-left {
                     position: absolute;
                     top: 40%;
-                    left: -150px;
-                    /*transform: translateX(-50%) translateY(-50%);*/
+                    left: 5px;
                     font-size: 19px;
                 }
             }
@@ -51,21 +65,24 @@ body {
             }
         }    
 
-                    .image-palette-du-gout {
-                        /*height: 275px;*/
-                        display: block;
+                    .image-restaurant {
                         width: 100%;
+                        height: 275px;
+                        display: block;
+                        object-fit: cover;
+                        object-position: center;
 
                         img {
                             width: 100%;
                             height: 275px;
                             object-fit: cover;
                             display: block;
+                            object-position: center;
                         }
                     }
                 
 
-                .carte-palette-du-gout {
+                .carte-restaurant {
                     width: 100%;
                     position: relative;
                     border-radius: 40px 40px 0 0;
@@ -120,14 +137,15 @@ body {
                             }
                         }
                     }
-                }
+                
 
                 .menu {
-                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     font-family: 'Roboto', sans-serif;
+                    gap: 15px;
+                    padding: 0 15px 0 15px;
 
                     .custom-underline {
                         font-size: 16px;
@@ -146,7 +164,6 @@ body {
                         height: 3px;
                         bottom: -7px;
                         left: 0;
-
                         z-index: -1;
                     }
 
@@ -163,23 +180,43 @@ body {
                     .menu-entrees {
                         display: flex;
                         flex-direction: column;
+                        align-items: flex-start;
                         gap: 25px;
                         margin-bottom: 30px;
                         margin-top: 10px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
 
                     .entrees {
                         display: flex;
                         flex-direction: column;
                         cursor: pointer;
-                        gap: 5px;
-                        width: 349px;
+                        width: 100%;
                         height: 69px;
                         align-items: flex-start;
                         background: #fff;
                         box-shadow: 0px 4px 15px 0px rgb(0, 0, 0, 0.10);
                         border-radius: 15px;
-                        margin-left: 12px;
+                        animation: chargement 3s both;
+                        transform-origin: top;
+                        overflow: hidden;
+                        position: relative;
+
+                        .entrees:nth-child(1) {
+                            animation-delay: 300ms;
+                        }
+
+                        .details {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 12px;
+                            gap: 5px;
+                            width: 285px;
+                            overflow: hidden;
+                        }
+                        
+
                         h2 {
                             overflow: hidden;
                             color: #000;
@@ -192,13 +229,12 @@ body {
                             line-height: normal;
                             align-self: stretch;
                             flex-shrink: 0;
-                            height: 21px;
-                            margin-top: 10px;
-                            margin-left: 10px;
+                            transform: translate(10px, 10px);
+                            /*position: relative;
+                            top: 8px;*/
                         }
 
                         h3 {
-                            height: 19px;
                             flex-shrink: 0;
                             align-self: stretch;
                             overflow: hidden;
@@ -210,18 +246,78 @@ body {
                             font-style: normal;
                             font-weight: 300;
                             line-height: normal;
-                            margin-top: 5px;
-                            transform: translate(10px, -25px);
+                            transform: translate(10px, 15px);
+                            /*position: relative;
+                            top: 10px;*/
                         }
+                    
+
 
                         .price {
-                            position: relative;
-                            left: 300px;
-                            top: -65px;
-                            font-weight: bold;
-                            
+                            font-weight: 700;
+                            display: flex;
+                            font-size: 15px;
+                            gap: 2px;
+                            align-items: flex-end;
+                            margin: 0 10px 12px 0;
+                            transform: translate(290px, 0px);
+                            /*position: relative;
+                            left: 245px;
+                            top: -62px;*/
+                            } 
+
+                            .animation-prix {
+                                width: 59px;
+                                height: 69px;
+                                border-radius: 0 15px 15px 0;
+                                background: #99e2d0;
+                                transition: all .5s ease;
+                                color: #fff;
+                                display: flex;
+                                place-items: center;
+                                font-size: 20px;
+                                flex-shrink: 0;
+                                transform: translate(286px, 0px);
+                                opacity: 0;
+                                position: absolute;
+                                /*top: -248px;
+                                left: 286px;*/
+                                cursor: pointer;
+
+                            /*&::before {
+                                content: '';
+                                display: block;
+                                width: 59px;
+                                height: 69px;
+                                border-radius: 0 15px 15px 0;
+                                background: #99e2d0;
+                                opacity: 0;
+                                transition: opacity 0.5s, transform 0.5s;
+                                position: absolute;
+                                top: 0px;
+                                left: 59px;
+                                
+                            }*/
+
+                            &:hover::before {
+                                opacity: 1;
+                                width: 59px;
+                                height: 69px;
+                                transform: translateX(0px);
+                            }
+
+                            .far.fa-circle-check {
+                                display: flex;
+                                position: relative;
+                                left: 15px;
+                            }
                         }
-                    }
+                    
+                    }    
+                        
+                
+                        
+                    
 
                     .menu-plats {
                         display: flex;
@@ -272,7 +368,7 @@ body {
                                 font-style: normal;
                                 font-weight: 300;
                                 line-height: normal;
-                                margin-top: 5px;
+                                margin-top: 10px;
                                 transform: translate(10px, -25px);
                             }
     
@@ -334,7 +430,7 @@ body {
                                 font-style: normal;
                                 font-weight: 300;
                                 line-height: normal;
-                                margin-top: 5px;
+                                margin-top: 10px;
                                 transform: translate(10px, -25px);
                             }
     
@@ -345,7 +441,8 @@ body {
                                 font-weight: bold;    
                             }
                         }
-                    }    
+                    }
+                    
 
                     .commander {
                         display: flex;
@@ -378,7 +475,13 @@ body {
                         transform: scale(1.2);
                     }
                 }
+
+}
+                
+                  
             }
+        }
+
 
                 footer {
                     background: #353535;
@@ -388,19 +491,22 @@ body {
                     flex-direction: column;
                     gap: 20px;
                     width: 100%;
-                    height: 215px;
+                    /*height: 215px;*/
 
                     .logo-footer {
                         font-family: "Shrikhand",cursive;
                         font-weight: 400;
                         width: 138px;
                         height: 27px;
+                        filter: brightness(15);
+                        margin-left: 25px;
                     }
 
                     .liens {
                         display: flex;
                         flex-direction: column;
                         gap: 16px;
+                        margin-left: 25px;
 
                         .liens1 {
                             display: flex;
@@ -410,13 +516,69 @@ body {
                             .proposition {
                                 display: flex;
                                 gap: 10px;
-                                color: #F6F6F6;
+
+                                .fa-solid.fa-ustensils {
+                                    color: #F6F6F6;
+                                }
+
+                                .proposer {
+                                    display: flex;
+                                    text-decoration: none;
+                                    font-family: 'roboto';
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #F6F6F6;
+                                }
+                            }
+
+                            .partenaire {
+                                display: flex;
+                                gap: 10px;
+
+                                .fas.fa-handshake {
+                                    color: #F6F6F6;
+                                }
+
+                                .partenaire {
+                                    display: flex;
+                                    text-decoration: none;
+                                    font-family: 'roboto';
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #F6F6F6;
+                                }
+                            }
+                        }
+
+                        .liens2 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+
+                            .mentions {
+                                display: flex;
+                                .mentions_legales {
+                                    display: flex;
+                                    text-decoration: none;
+                                    font-family: 'roboto';
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #F6F6F6;
+                                }
+                            }
+
+                                .contact {
+                                    display: flex;
+                                .contact_mail {
+                                    display: flex;
+                                    text-decoration: none;
+                                    font-family: 'roboto';
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #F6F6F6;
+                                }
                             }
                         }
                     }
                 }
             }
-
-    
-   
-    
