@@ -1,7 +1,8 @@
 
 
-
     //styles
+
+    @import "responsive";
     
     body {
         max-width: 100%;
@@ -112,7 +113,7 @@
                 align-items: center;
                 flex-direction: column;
 
-                h1 {
+                #responsive-title {
                     font-size: 22px;
                     font-family: $police2;
                     font-weight: 700;
@@ -127,7 +128,7 @@
                     flex-shrink: 0;
                 }
 
-                h3 {
+                .responsive-font-size {
                     display: flex;
                     justify-content: center;
                     align-items: center;
