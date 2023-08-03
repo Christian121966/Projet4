@@ -1,37 +1,13 @@
-@media screen and (min-width: 768px) {
-  #responsive-title {
-    white-space: nowrap;
-    font-size: 40px;
-  }
-  .responsive-font-size {
-    white-space: nowrap;
-  }
-  .icone-fonctionnement {
-    align-items: center;
-  }
-  p {
-    position: relative;
-    top: -5px;
-  }
-  .fas.fa-mobile-screen-button {
-    position: relative;
-    top: -10px;
-  }
-  .fas.fa-list-ul {
-    position: relative;
-    top: -10px;
-  }
-  .fas.fa-store {
-    position: relative;
-    top: -10px;
-  }
-}
 @media screen and (min-width: 1440px) {
   header {
     padding: 30px 0px 31.798px 0px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     height: 96px;
   }
+  /*section.decouverte {
+      padding: 50px 180px;
+
+  }*/
 }
 body {
   max-width: 100%;
@@ -136,6 +112,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 1440px) {
+  .main-container main section.decouverte {
+    padding: 30px 0px;
+    gap: 30px;
+  }
+}
 .main-container main section.decouverte #responsive-title {
   font-size: 22px;
   font-family: "Roboto", sans-serif;
@@ -150,6 +132,14 @@ body {
   line-height: normal;
   flex-shrink: 0;
 }
+@media screen and (min-width: 768px) {
+  .main-container main section.decouverte #responsive-title {
+    font-size: 40px;
+    white-space: nowrap;
+    width: 645px;
+    height: 47px;
+  }
+}
 .main-container main section.decouverte .responsive-font-size {
   display: flex;
   justify-content: center;
@@ -160,6 +150,15 @@ body {
   font-size: 16px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .main-container main section.decouverte .responsive-font-size {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+    width: 531px;
+    height: 46px;
+  }
 }
 .main-container main section.decouverte .button-explorer {
   width: 218px;
@@ -194,12 +193,32 @@ body {
   width: 100%;
   height: 440px;
 }
+@media screen and (min-width: 1440px) {
+  .main-container .Fonctionnement {
+    padding: 50px 180px;
+    gap: 25px;
+  }
+}
 .main-container .Fonctionnement .button {
   display: flex;
   flex-direction: column;
   padding: 0 20px 0 32px;
   box-sizing: border-box;
   margin-right: 0;
+}
+@media screen and (min-width: 1440px) {
+  .main-container .Fonctionnement .button {
+    flex-direction: row;
+    gap: 25px;
+    align-self: stretch;
+    background: #FFF;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-container p {
+    position: relative;
+    top: -5px;
+  }
 }
 .main-container a.fonction {
   display: flex;
@@ -228,6 +247,11 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: transform 0.3s ease-out;
+}
+@media screen and (min-width: 768px) {
+  .main-container .icone-fonctionnement {
+    align-items: center;
+  }
 }
 .main-container .icone-fonctionnement:hover {
   transform: scale(1.1);
@@ -258,6 +282,12 @@ body {
   color: #7E7E7E;
   transform: translate(20px);
 }
+@media screen and (min-width: 768px) {
+  .main-container .icone-fonctionnement .fas.fa-mobile-screen-button {
+    position: relative;
+    top: -10px;
+  }
+}
 .main-container .icone-fonctionnement .fas.fa-mobile-screen-button:hover {
   color: #9356DC;
   cursor: pointer;
@@ -270,6 +300,12 @@ body {
   color: #7E7E7E;
   transform: translate(20px);
 }
+@media screen and (min-width: 768px) {
+  .main-container .icone-fonctionnement .fas.fa-list-ul {
+    position: relative;
+    top: -10px;
+  }
+}
 .main-container .icone-fonctionnement .fas.fa-list-ul:hover {
   color: #9356DC;
   cursor: pointer;
@@ -281,6 +317,12 @@ body {
   margin-top: 24.5px;
   color: #7E7E7E;
   transform: translate(20px);
+}
+@media screen and (min-width: 768px) {
+  .main-container .icone-fonctionnement .fas.fa-store {
+    position: relative;
+    top: -10px;
+  }
 }
 .main-container .icone-fonctionnement .fas.fa-store:hover {
   color: #9356DC;
@@ -963,38 +1005,14 @@ body {
   color: #F6F6F6;
 }
 
-@media screen and (min-width: 768px) {
-  #responsive-title {
-    white-space: nowrap;
-    font-size: 40px;
-  }
-  .responsive-font-size {
-    white-space: nowrap;
-  }
-  .icone-fonctionnement {
-    align-items: center;
-  }
-  p {
-    position: relative;
-    top: -5px;
-  }
-  .fas.fa-mobile-screen-button {
-    position: relative;
-    top: -10px;
-  }
-  .fas.fa-list-ul {
-    position: relative;
-    top: -10px;
-  }
-  .fas.fa-store {
-    position: relative;
-    top: -10px;
-  }
-}
 @media screen and (min-width: 1440px) {
   header {
     padding: 30px 0px 31.798px 0px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     height: 96px;
   }
+  /*section.decouverte {
+      padding: 50px 180px;
+
+  }*/
 }/*# sourceMappingURL=style.css.map */

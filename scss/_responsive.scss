@@ -1,39 +1,3 @@
-@media screen and (min-width: 768px) {
-  #responsive-title {
-    white-space: nowrap;
-    font-size: 40px;
-    
-  }
-
-  .responsive-font-size {
-    white-space: nowrap;
-  }
-
-    .icone-fonctionnement {
-      align-items: center;
-    }
-
-    p {
-      position: relative;
-      top: -5px;
-    }
-
-    .fas.fa-mobile-screen-button {
-      position: relative;
-      top: -10px;
-    }
-
-    .fas.fa-list-ul {
-      position: relative;
-      top: -10px;
-    }
-
-    .fas.fa-store {
-      position: relative;
-      top: -10px;
-    }
-  }
-
 
   @media screen and (min-width: 1440px) {
     header {
@@ -41,6 +5,11 @@
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
       height: 96px;
     }
+
+    /*section.decouverte {
+        padding: 50px 180px;
+        
+    }*/
   }
 
   
