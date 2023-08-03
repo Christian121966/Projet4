@@ -38,7 +38,7 @@ body {
   justify-content: center;
 }
 .main-container header .logo-image {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +62,8 @@ body {
   justify-content: center;
   text-align: center;
   gap: 17px;
-  background-color: #EAEAEA;
-  border-color: #EAEAEA;
+  background-color: #eaeaea;
+  border-color: #eaeaea;
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.4);
 }
 .main-container .fa-solid.fa-location-dot {
@@ -108,7 +108,7 @@ body {
   padding: 35px 0;
   width: 100%;
   /*height: 287px;*/
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   align-items: center;
   flex-direction: column;
 }
@@ -164,7 +164,7 @@ body {
   width: 218px;
   height: 50px;
   border-radius: 25px;
-  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  background: var(--button-gradient, linear-gradient(175deg, #9356dc 0%, #ff79da 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
   margin-top: 27px;
@@ -179,7 +179,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: normal;
-  color: #FFF;
+  color: #fff;
   margin-top: 15px;
 }
 .main-container main section.decouverte .button-explorer:hover {
@@ -189,7 +189,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #FFF;
+  background-color: #fff;
   width: 100%;
   height: 440px;
 }
@@ -211,7 +211,7 @@ body {
     flex-direction: row;
     gap: 25px;
     align-self: stretch;
-    background: #FFF;
+    background: #fff;
   }
 }
 @media screen and (min-width: 768px) {
@@ -242,7 +242,7 @@ body {
   margin-bottom: 24.92px;
   display: flex;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -264,8 +264,8 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #9356DC;
-  color: #FFFFFF;
+  background-color: #9356dc;
+  color: #ffffff;
   font-size: 14px;
   font-family: Roboto;
   font-weight: 500;
@@ -279,7 +279,7 @@ body {
   width: 13.19px;
   height: 19.903px;
   margin-top: 24.5px;
-  color: #7E7E7E;
+  color: #7e7e7e;
   transform: translate(20px);
 }
 @media screen and (min-width: 768px) {
@@ -297,7 +297,7 @@ body {
   width: 16px;
   height: 15.92px;
   margin-top: 24.5px;
-  color: #7E7E7E;
+  color: #7e7e7e;
   transform: translate(20px);
 }
 @media screen and (min-width: 768px) {
@@ -315,7 +315,7 @@ body {
   width: 18px;
   height: 17.91px;
   margin-top: 24.5px;
-  color: #7E7E7E;
+  color: #7e7e7e;
   transform: translate(20px);
 }
 @media screen and (min-width: 768px) {
@@ -333,6 +333,16 @@ body {
   background-color: var(--background, #F6F6F6);
   width: 100%;
 }
+@media only screen and (min-width: 1440px) {
+  .main-container .restaurants {
+    display: flex;
+    padding: 0px 180px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    align-self: stretch;
+  }
+}
 .main-container .restaurants .restaurants-cards {
   box-sizing: border-box;
   padding-left: 17px;
@@ -344,6 +354,16 @@ body {
   gap: 18px;
   padding-bottom: 70px;
 }
+@media only screen and (min-width: 1440px) {
+  .main-container .restaurants .restaurants-cards {
+    width: 100%;
+    height: 608px;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 .main-container .restaurants .card {
   width: 100%;
   height: 270px;
@@ -351,6 +371,13 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   overflow: hidden;
+}
+@media only screen and (min-width: 1440px) {
+  .main-container .restaurants .card {
+    width: calc(50% - 75px);
+    height: 251px;
+    flex-shrink: 0;
+  }
 }
 .main-container .restaurants .card-link {
   position: relative;
@@ -396,7 +423,7 @@ body {
 .main-container .restaurants .rectangle {
   width: 80px;
   height: 29px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 2px;
   display: flex;
   justify-content: center;
@@ -451,7 +478,7 @@ body {
   width: 100%;
   /*height: 193px;*/
   gap: 20px;
-  color: #FFF;
+  color: #fff;
   background-color: #353535;
   padding: 22px 25px 22px 25px;
 }
