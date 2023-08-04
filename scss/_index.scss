@@ -500,13 +500,32 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    /*height: 193px;*/
     gap: 20px;
     color: #fff;
     background-color: #353535;
     padding: 22px 25px 22px 25px;
 
+    @media only screen and (min-width: 1440px) {
+      padding: 30px 25px;
+      justify-content: flex-end;
+      gap: 16px;
+      flex-shrink: 0;
+      align-items: flex-end;
+      position: relative;
+      
+    }
+
     .logo-image.small-case {
+
+      @media only screen and (min-width: 1440px) {
+        display: flex;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        position: relative;
+        top: 35px;
+      }
       img {
         width: 139px;
         height: 27px;
@@ -530,6 +549,55 @@ body {
       display: flex;
       flex-direction: column;
       gap: 16px;
+
+      @media only screen and (min-width: 1440px) {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 7px;
+        margin-right: 139px;
+
+        .contact {
+          width: 130px;
+          height: 20px;
+          color: var(--white, #FFF);
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-right: 16px;
+        }
+
+        .mentions {
+          width: 130px;
+          height: 20px;
+          color: var(--white, #FFF);
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .partenaire {
+          width: 168px;
+          color: var(--white, #FFF);
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .proposition {
+          color: var(--white, #FFF);
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
 
       a {
         text-decoration: none;
