@@ -11,11 +11,11 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     width: 100%;
-    //max-width: 375px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 
     header {
       width: 100%;
@@ -66,10 +66,7 @@
           height: 36px;
 
           @media screen and (min-width: 768px) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            left: -30px;
+            left: -50px;
           }
         }
       }
@@ -100,6 +97,10 @@
       box-sizing: border-box;
       flex-shrink: 0;
 
+      @media screen and (min-width: 768px) {
+        width: 562.66px;
+      }
+
       .logo-menu-container {
         position: relative;
         display: flex;
@@ -110,6 +111,11 @@
         color: #101010;
         margin-top: 32px;
         margin-left: 15px;
+
+        @media screen and (min-width: 768px) {
+          left: 110px;
+          top: -10px;
+        }
 
         .icone-coeur {
           display: flex;
@@ -122,11 +128,6 @@
           display: flex;
           position: relative;
           right: -28px;
-
-          @media screen and (min-width: 768px) {
-            left: 380px;
-            cursor: pointer;
-          }
         }
 
         .fas.fa-heart {
@@ -137,29 +138,6 @@
           opacity: 0;
           cursor: pointer;
           transition: all 500ms;
-
-          @media screen and (min-width: 768px) {
-            position: relative;
-            right: -380pc;
-            opacity: 1;
-            animation: fillheart 2s;
-            cursor: pointer;
-
-            .fas.fa-heart:hover {
-              opacity: 0;
-              transition: all 200ms;
-            }
-           
-
-            @keyframes fillheart {
-              0% {
-                background-position: 0 0;
-              }
-              100% {
-                background-position: 100% 0;
-              }
-            }
-          }
         }
 
         .fas.fa-heart:hover {
@@ -313,6 +291,10 @@
             margin: 0 10px 12px 0;
             position: relative;
             transform: translate(290px);
+
+            @media screen and (min-width: 768px) {
+              left: 200px;
+            }
             
 
             .price:hover {
@@ -414,13 +396,6 @@
               margin-top: 10px;
               transform: translate(10px, -25px);
             }
-
-            /*.price {
-              position: relative;
-              left: 300px;
-              top: -65px;
-              font-weight: bold;
-            }*/
           }
         }
 
@@ -492,6 +467,10 @@
           position: relative;
           left: 65px;
           bottom: 35px;
+
+          @media screen and (min-width: 768px) {
+            left: 165px;
+          }
           }
 
           .commander:hover {
@@ -510,6 +489,10 @@
               font-size: 16px;
               font-family: $police2;
               font-weight: 500;
+
+              @media screen and (min-width: 768px) {
+                left: 70px;
+              }
               }
 
           .custom-button:hover {

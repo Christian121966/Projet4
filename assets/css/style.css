@@ -748,10 +748,7 @@ body header .logo-ohmyfood .logo-image {
 }
 @media screen and (min-width: 768px) {
   body header .logo-ohmyfood .logo-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: -30px;
+    left: -50px;
   }
 }
 body .image-restaurant {
@@ -781,6 +778,11 @@ body .carte-restaurant {
   box-sizing: border-box;
   flex-shrink: 0;
 }
+@media screen and (min-width: 768px) {
+  body .carte-restaurant {
+    width: 562.66px;
+  }
+}
 body .carte-restaurant .logo-menu-container {
   position: relative;
   display: flex;
@@ -791,6 +793,12 @@ body .carte-restaurant .logo-menu-container {
   color: #101010;
   margin-top: 32px;
   margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  body .carte-restaurant .logo-menu-container {
+    left: 110px;
+    top: -10px;
+  }
 }
 body .carte-restaurant .logo-menu-container .icone-coeur {
   display: flex;
@@ -803,12 +811,6 @@ body .carte-restaurant .logo-menu-container .far.fa-heart {
   position: relative;
   right: -28px;
 }
-@media screen and (min-width: 768px) {
-  body .carte-restaurant .logo-menu-container .far.fa-heart {
-    left: 380px;
-    cursor: pointer;
-  }
-}
 body .carte-restaurant .logo-menu-container .fas.fa-heart {
   color: transparent;
   background: linear-gradient(360deg, #ff79da -20%, #9356dc 123%);
@@ -817,27 +819,6 @@ body .carte-restaurant .logo-menu-container .fas.fa-heart {
   opacity: 0;
   cursor: pointer;
   transition: all 500ms;
-}
-@media screen and (min-width: 768px) {
-  body .carte-restaurant .logo-menu-container .fas.fa-heart {
-    position: relative;
-    right: -380pc;
-    opacity: 1;
-    animation: fillheart 2s;
-    cursor: pointer;
-  }
-  body .carte-restaurant .logo-menu-container .fas.fa-heart .fas.fa-heart:hover {
-    opacity: 0;
-    transition: all 200ms;
-  }
-  @keyframes fillheart {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100% 0;
-    }
-  }
 }
 body .carte-restaurant .logo-menu-container .fas.fa-heart:hover {
   opacity: 1;
@@ -976,6 +957,11 @@ body .carte-restaurant .menu .details .price {
   position: relative;
   transform: translate(290px);
 }
+@media screen and (min-width: 768px) {
+  body .carte-restaurant .menu .details .price {
+    left: 200px;
+  }
+}
 body .carte-restaurant .menu .details .price .price:hover {
   transform: translateX(231px);
 }
@@ -1030,12 +1016,6 @@ body .carte-restaurant .menu-plats .plats {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-left: 12px;
-  /*.price {
-    position: relative;
-    left: 300px;
-    top: -65px;
-    font-weight: bold;
-  }*/
 }
 body .carte-restaurant .menu-plats .plats h2 {
   overflow: hidden;
@@ -1135,6 +1115,11 @@ body .carte-restaurant .commander {
   left: 65px;
   bottom: 35px;
 }
+@media screen and (min-width: 768px) {
+  body .carte-restaurant .commander {
+    left: 165px;
+  }
+}
 body .carte-restaurant .commander:hover {
   transform: scale(1.2);
 }
@@ -1150,6 +1135,11 @@ body .carte-restaurant .custom-button.commander {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  body .carte-restaurant .custom-button.commander {
+    left: 70px;
+  }
 }
 body .carte-restaurant .custom-button:hover {
   transform: scale(1.2);
