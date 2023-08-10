@@ -15,3 +15,4 @@ Bonjour Julien,
 jespère que tu as passé un bon week-end.
 Si tu as un moment pour moi, pourrais-tu regarder mon Projet4 s'il te plait. J'ai quelques précisions que je voudrais qu'on voit ensemble avant que je n'aille un peu plus loin.
 Bon après-midi.
+
