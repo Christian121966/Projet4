@@ -1,6 +1,7 @@
 //styles
 
 
+
 body {
   max-width: 100%;
   flex-direction: column;
@@ -11,7 +12,194 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+
+
+
+/*.splash-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: splash-screen 30s ease-in-out forwards;
+
+
+  @keyframes splash-screen {
+
+    0% {
+      opacity: 0;
+      
+    }
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      display: none;
+      
+    }
+  }
+
+    @keyframes animate__rotateOutUpRight {
+    0% {
+      transform-origin: right bottom;
+      transform: rotate(0);
+      opacity: 1;
+    }
+    50% {
+      transform-origin: right bottom;
+      transform: rotate(25deg);
+      opacity: 1;
+    }
+    100% {
+      transform-origin: right bottom;
+      transform: rotate(-25deg);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animate__rubberBand {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scaleX(1.25) scaleY(0.75);
+    }
+    40% {
+      transform: scaleX(0.75) scaleY(1.25);
+    }
+    50% {
+      transform: scaleX(1.15) scaleY(0.85);
+    }
+    65% {
+      transform: scaleX(0.95) scaleY(1.05);
+    }
+    75% {
+      transform: scaleX(1.05) scaleY(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .ohmyfood {
+    animation: animate__rotateOutUpRight 5s alternate, animate__rubberBand 2s forwards 5s;
+    animation-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 350px;
+    font-size: 50px;
+  }
+  
+  .ohmyfood .letter-1,
+  .ohmyfood-reverse .letter-1 {
+    color: #FFD700; 
+  }
+  
+  .ohmyfood .letter-2,
+  .ohmyfood-reverse .letter-2 {
+    color: #FF8C00; 
+  }
+  
+  .ohmyfood .letter-3,
+  .ohmyfood-reverse .letter-3 {
+    color: #FF4500; 
+  }
+  
+  .ohmyfood .letter-4,
+  .ohmyfood-reverse .letter-4 {
+    color: #FF6347; 
+  }
+  
+  .ohmyfood .letter-5,
+  .ohmyfood-reverse .letter-5 {
+    color: #FFA500; 
+  }
+  
+  .ohmyfood .letter-6,
+  .ohmyfood-reverse .letter-6 {
+    color: #FF4500; 
+  }
+  
+  .ohmyfood .letter-7,
+  .ohmyfood-reverse .letter-7 {
+    color: #FF8C00; 
+  }
+  
+  .ohmyfood .letter-8,
+  .ohmyfood-reverse .letter-8 {
+    color: #FFA500; 
+  }
+  
+  .ohmyfood .letter-9,
+  .ohmyfood-reverse .letter-9 {
+    color: #FFD700; 
+  }
+  
+    
+  .ohmyfood-reverse {
+    animation: animate__rotateOutUpRight 5s alternate, animate__rubberBand 2s forwards 5s;
+    animation-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 350px;
+    font-size: 50px;
+  }
+   
+  
+  @keyframes animate__rotateOutUpLeft {
+    0% {
+      transform-origin: left bottom;
+      transform: rotate(0);
+      opacity: 1;
+    }
+    50% {
+      transform-origin: left bottom;
+      transform: rotate(-25deg);
+      opacity: 1;
+    }
+    100% {
+      transform-origin: left bottom;
+      transform: rotate(25deg);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animate__rubberBand {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scaleX(1.25) scaleY(0.75);
+    }
+    40% {
+      transform: scaleX(0.75) scaleY(1.25);
+    }
+    50% {
+      transform: scaleX(1.15) scaleY(0.85);
+    }
+    65% {
+      transform: scaleX(0.95) scaleY(1.05);
+    }
+    75% {
+      transform: scaleX(1.05) scaleY(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }  
+
+}*/
+
+
 
 .main-container {
   width: 100%;
@@ -30,13 +218,14 @@ body {
     justify-content: center;
 
     .logo-image {
-      background-color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $button-text-color;
       padding: 0;
       margin-right: 0px;
+
+      
     }
 
     & img {
@@ -46,7 +235,12 @@ body {
       padding: 0px 19px 0px 16px;
       justify-content: center;
       align-items: center;
-      margin-top: 14px;
+      margin-top: 5px;
+      margin-left: 70px;
+
+      @media screen and (min-width: 1440px) {
+        margin-left: -25px;
+      }
     }
   }
 
@@ -610,4 +804,5 @@ body {
       }
     }
   }
+}
 }
