@@ -8,189 +8,160 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*.splash-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    animation: splash-screen 30s ease-in-out forwards;
-
-
-    @keyframes splash-screen {
-
-      0% {
-        opacity: 0;
-
-      }
-      50% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 0;
-        display: none;
-
-      }
-    }
-
-      @keyframes animate__rotateOutUpRight {
-      0% {
-        transform-origin: right bottom;
-        transform: rotate(0);
-        opacity: 1;
-      }
-      50% {
-        transform-origin: right bottom;
-        transform: rotate(25deg);
-        opacity: 1;
-      }
-      100% {
-        transform-origin: right bottom;
-        transform: rotate(-25deg);
-        opacity: 1;
-      }
-    }
-
-    @keyframes animate__rubberBand {
-      0% {
-        transform: scale(1);
-      }
-      30% {
-        transform: scaleX(1.25) scaleY(0.75);
-      }
-      40% {
-        transform: scaleX(0.75) scaleY(1.25);
-      }
-      50% {
-        transform: scaleX(1.15) scaleY(0.85);
-      }
-      65% {
-        transform: scaleX(0.95) scaleY(1.05);
-      }
-      75% {
-        transform: scaleX(1.05) scaleY(0.95);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    .ohmyfood {
-      animation: animate__rotateOutUpRight 5s alternate, animate__rubberBand 2s forwards 5s;
-      animation-timing-function: ease-in-out;
-      display: flex;
-      justify-content: center;
-      position: relative;
-      top: 350px;
-      font-size: 50px;
-    }
-
-    .ohmyfood .letter-1,
-    .ohmyfood-reverse .letter-1 {
-      color: #FFD700; 
-    }
-
-    .ohmyfood .letter-2,
-    .ohmyfood-reverse .letter-2 {
-      color: #FF8C00; 
-    }
-
-    .ohmyfood .letter-3,
-    .ohmyfood-reverse .letter-3 {
-      color: #FF4500; 
-    }
-
-    .ohmyfood .letter-4,
-    .ohmyfood-reverse .letter-4 {
-      color: #FF6347; 
-    }
-
-    .ohmyfood .letter-5,
-    .ohmyfood-reverse .letter-5 {
-      color: #FFA500; 
-    }
-
-    .ohmyfood .letter-6,
-    .ohmyfood-reverse .letter-6 {
-      color: #FF4500; 
-    }
-
-    .ohmyfood .letter-7,
-    .ohmyfood-reverse .letter-7 {
-      color: #FF8C00; 
-    }
-
-    .ohmyfood .letter-8,
-    .ohmyfood-reverse .letter-8 {
-      color: #FFA500; 
-    }
-
-    .ohmyfood .letter-9,
-    .ohmyfood-reverse .letter-9 {
-      color: #FFD700; 
-    }
-
-
-    .ohmyfood-reverse {
-      animation: animate__rotateOutUpRight 5s alternate, animate__rubberBand 2s forwards 5s;
-      animation-timing-function: ease-in-out;
-      display: flex;
-      justify-content: center;
-      position: relative;
-      top: 350px;
-      font-size: 50px;
-    }
-
-
-    @keyframes animate__rotateOutUpLeft {
-      0% {
-        transform-origin: left bottom;
-        transform: rotate(0);
-        opacity: 1;
-      }
-      50% {
-        transform-origin: left bottom;
-        transform: rotate(-25deg);
-        opacity: 1;
-      }
-      100% {
-        transform-origin: left bottom;
-        transform: rotate(25deg);
-        opacity: 1;
-      }
-    }
-
-    @keyframes animate__rubberBand {
-      0% {
-        transform: scale(1);
-      }
-      30% {
-        transform: scaleX(1.25) scaleY(0.75);
-      }
-      40% {
-        transform: scaleX(0.75) scaleY(1.25);
-      }
-      50% {
-        transform: scaleX(1.15) scaleY(0.85);
-      }
-      65% {
-        transform: scaleX(0.95) scaleY(1.05);
-      }
-      75% {
-        transform: scaleX(1.05) scaleY(0.95);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }  
-
-  }*/
+}
+body .animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  z-index: 9999;
+  animation: fadeOut 1s 5s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible; /* Ajouter cette ligne */
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden; /* Ajouter cette ligne */
+  }
+}
+@keyframes animate__rotateOutUpRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+  50% {
+    transform-origin: right bottom;
+    transform: rotate(25deg);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(-25deg);
+    opacity: 1;
+  }
+}
+@keyframes animate__rubberBand {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  50% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  65% {
+    transform: scaleX(0.95) scaleY(1.05);
+  }
+  75% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body .ohmyfood {
+  animation: animate__rotateOutUpRight 5s alternate, animate__rubberBand 2s forwards 5s;
+  animation-timing-function: ease-in-out;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 529px;
+  font-size: 50px;
+}
+body .ohmyfood .letter-1,
+body .ohmyfood-reverse .letter-1 {
+  color: #FFD700; /* Gold */
+}
+body .ohmyfood .letter-2,
+body .ohmyfood-reverse .letter-2 {
+  color: #FF8C00; /* Dark Orange */
+}
+body .ohmyfood .letter-3,
+body .ohmyfood-reverse .letter-3 {
+  color: #FF4500; /* Orange */
+}
+body .ohmyfood .letter-4,
+body .ohmyfood-reverse .letter-4 {
+  color: #FF6347; /* Tomato */
+}
+body .ohmyfood .letter-5,
+body .ohmyfood-reverse .letter-5 {
+  color: #FFA500; /* Orange */
+}
+body .ohmyfood .letter-6,
+body .ohmyfood-reverse .letter-6 {
+  color: #FF4500; /* Orange */
+}
+body .ohmyfood .letter-7,
+body .ohmyfood-reverse .letter-7 {
+  color: #FF8C00; /* Dark Orange */
+}
+body .ohmyfood .letter-8,
+body .ohmyfood-reverse .letter-8 {
+  color: #FFA500; /* Orange */
+}
+body .ohmyfood .letter-9,
+body .ohmyfood-reverse .letter-9 {
+  color: #FFD700; /* Gold */
+}
+body .ohmyfood-reverse {
+  animation: animate__rotateOutUpLeft 5s alternate, animate__rubberBand 2s forwards 5s;
+  animation-timing-function: ease-in-out;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 350px;
+  font-size: 50px;
+}
+@keyframes animate__rotateOutUpLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+  50% {
+    transform-origin: left bottom;
+    transform: rotate(-25deg);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(25deg);
+    opacity: 1;
+  }
+}
+@keyframes animate__rubberBand {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  50% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  65% {
+    transform: scaleX(0.95) scaleY(1.05);
+  }
+  75% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 body .main-container {
   width: 100%;
@@ -786,7 +757,7 @@ body .main-container footer .links-section .fa-utensils {
     margin-left: 100px;
   }
   .commander {
-    margin-left: 190px;
+    margin-left: 175px;
   }
   /*.custom-button.commander {
       margin-left: 190px;
@@ -1327,7 +1298,7 @@ body footer .links-section .contact {
     margin-left: 100px;
   }
   .commander {
-    margin-left: 190px;
+    margin-left: 175px;
   }
   /*.custom-button.commander {
       margin-left: 190px;
