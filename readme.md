@@ -10,6 +10,7 @@ Mobile first
 Codage uniquement en CSS/SASS.
 
 PAGE ACCEUIL avec la photo de chaque restaurant et la possibilité d'accéder aux propositions de menus de chaque restaurant.
+
 PAGE RESTAURANT :
 header avec le logo 
 Bouton cliquable pour retour à la page d'acceuil
