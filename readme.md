@@ -1,4 +1,4 @@
-# mon Projet ohmyfood
+# Mon Projet ohmyfood
 
 le projet 4 de mon parcours
 openclassrooms
